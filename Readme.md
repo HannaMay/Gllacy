@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анна Булова](https://up.htmlacademy.ru/htmlcss/16/user/239666).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://htmlacademy.ru//htmlcss/16/user/70260).
 
 ---
 
