@@ -8,7 +8,7 @@
 
 <body>
 
-  <div class="conteiner">
+  <div class="container">
 
     <header class="header">
       <div class="logo">
@@ -18,7 +18,7 @@
         <ul class="main-nav__list main-nav__list--main">
           <li class="main-nav__item main-nav__item--dropdown">
             <a class="main-nav__link" href="#">Каталог</a>
-            <ul class="main-nav__list main-nav__list--katalog">
+            <ul class="main-nav__list main-nav__list--сatalog">
               <li class="main-nav__item"><a class="main-nav__link" href="#">Новинки</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">Сливочное</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">Щербеты</a></li>
@@ -37,13 +37,15 @@
         <ul class="main-nav__list main-nav__list--user ">
           <li class="main-nav__item main-nav__item--search-icon">
             <div class="search-icon">
-              <button class="search-icon__button" type="button"></button>
-              <input class="search-icon__input" type="search" value="Что ищем?">
+              <a class="search-icon__link" href="#"></a>
+              <form class="" action="/echo" method="post">
+                <input class="search-icon__input" type="search" value="Что ищем?">
+              </form>
             </div>
           </li>
           <li class="main-nav__item main-nav__item--login">
             <div class="login">
-              <button class="login__button" type="button"><img class="login__pic" src="#" alt="login">Вход</button>
+              <a class="login__link" href="#"><img class="login__pic" src="#" alt="login">Вход</a>
               <form class="login-form" action="/echo" method="post">
                 <div class="login-form__block">
                   <input class="login-form__input" type="email" placeholder="Электронная почта" required>
@@ -61,7 +63,7 @@
           </li>
           <li class="main-nav__item main-nav__item--basket">
             <div class="basket">
-              <button class="basket__button" type="button"><img class="basket__pic" src="#" alt="basket">Пусто</button>
+              <a class="basket__link" href="#"><img class="basket__pic" src="#" alt="basket">Пусто</a>
             </div>
           </li>
         </ul>
@@ -69,7 +71,7 @@
 
       <div class="contacts">
         <p class="contacts__description">С 10 до 20, ежедневно</p>
-        <p class="contacts__description">8 812 450-25-25</p>
+        <p class="contacts__description__bold">8 812 450-25-25</p>
       </div>
 
     </header>
@@ -77,76 +79,96 @@
     <main class="main">
 
       <div class="slaider">
-        <div class="title">
-          <h1 class="title__1">Крем-брюле и пломбир с малиновым джемом</h1>
+        <div class="title-block">
+          <h1 class="title-block__title">Крем-брюле и пломбир с малиновым джемом</h1>
         </div>
-        <div class="slaider__2">
-          <h1 class="title">Шоколадный пломбир и лимонный сорбет</h1>
+        <div class="title-block">
+          <h1 class="title-block__title">Шоколадный пломбир и лимонный сорбет</h1>
         </div>
-        <div class="slaider__3">
-          <h1 class="title">Пломбир с помадкой и клубничный щербет</h1>
+        <div class="title-block">
+          <h1 class="title-block__title">Пломбир с помадкой и клубничный щербет</h1>
         </div>
         <div class="slaider slaider-control">
-          <button class="slaider-control__button" type="button"></button>
-          <button class="slaider-control__button" type="button"></button>
-          <button class="slaider-control__button" type="button"></button>
+          <ul class="radiobtn-list">
+            <li class="radiobtn-list__item">
+              <input class="radiobtn-list__input" type="radio" id="1" name="radio" checked>
+              <label class="radiobtn-list__label" for="1"></label>
+            </li>
+            <li class="radiobtn-list__item">
+              <input class="radiobtn-list__input" type="radio" id="2" name="radio" checked>
+              <label class="radiobtn-list__label" for="2"></label>
+            </li>
+            <li class="radiobtn-list__item">
+              <input class="radiobtn-list__input" type="radio" id="3" name="radio" checked>
+              <label class="radiobtn-list__label" for="3"></label>
+            </li>
+          </ul>
         </div>
-        <div class="slaider slaider-button">
-          <button class="slaider-button__button" type="button">Дайте оба!</button>
+        <div class="slaider slaider-link">
+          <a class="slaider-link__link" href="#">Дайте оба!</a>
         </div>
       </div>
       <div class="banner">
         <div class="lead">
           <h2 class="lead__title">Малинка даром!</h2>
           <p class="lead__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="lead__button" type="button" name="button">Хочу варенье!</button>
+          <a class="lead__link" href="#">Хочу варенье!</a>
         </div>
         <div class="lead">
           <h2 class="lead__title">Шоколадки даром!</h2>
           <p class="lead__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="lead__button" type="button" name="button">Хочу шоколадки!</button>
+          <a class="lead__link" href="#">Хочу шоколадки!</a>
+
         </div>
       </div>
 
       <div class="hits">
-        <div class="hits__1">
-          <div class="ice-cream">
-            <img class="ice-cream-hit__pic" src="#" alt="hit">
-            <img class="ice-cream__pic" src="#" alt="ice-cream">
-          </div>
-          <div class="text">
-            <h2 class="text__title">310 &#8381;/кг</h2>
-            <p class="text__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          </div>
-        </div>
-        <div class="hits__2">
-          <div class="ice-cream">
-            <img class="ice-cream-hit__pic" src="#" alt="hit">
-            <img class="ice-cream__pic" src="#" alt="ice-cream">
-          </div>
-          <div class="text">
-            <h2 class="text__title">380 &#8381;/кг</h2>
-            <p class="text__description">Сливочно-кофейное с кусочками шоколада</p>
+        <div class="hit">
+          <div class="layer">
+            <div class="ice-cream">
+              <img class="ice-cream__pic" src="#" alt="ice-cream">
+            </div>
+            <div class="text">
+              <h2 class="text__title">310 &#8381;/кг</h2>
+              <p class="text__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </div>
+            <a class="layer__link" href="#">Быстрый просмотор</a>
           </div>
         </div>
-        <div class="hits__3">
-          <div class="ice-cream">
-            <img class="ice-cream-hit__pic" src="#" alt="hit">
-            <img class="ice-cream__pic" src="#" alt="ice-cream">
-          </div>
-          <div class="text">
-            <h2 class="text__title">355 &#8381;/кг</h2>
-            <p class="text__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+        <div class="hit">
+          <div class="layer">
+            <div class="ice-cream">
+              <img class="ice-cream__pic" src="#" alt="ice-cream">
+            </div>
+            <div class="text">
+              <h2 class="text__title">380 &#8381;/кг</h2>
+              <p class="text__description">Сливочно-кофейное с кусочками шоколада</p>
+            </div>
+            <a class="layer__link" href="#">Быстрый просмотор</a>
           </div>
         </div>
-        <div class="hits__4">
-          <div class="ice-cream">
-            <img class="ice-cream-hit__pic" src="#" alt="hit">
-            <img class="ice-cream__pic" src="#" alt="ice-cream">
+        <div class="hit">
+          <div class="layer">
+            <div class="ice-cream">
+              <img class="ice-cream__pic" src="#" alt="ice-cream">
+            </div>
+            <div class="text">
+              <h2 class="text__title">355 &#8381;/кг</h2>
+              <p class="text__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </div>
+            <a class="layer__link" href="#">Быстрый просмотор</a>
           </div>
-          <div class="text">
-            <h2 class="text__title">415 &#8381;/кг</h2>
-            <p class="text__description">Сливочное крем-брюле с карамельной подливкой</p>
+        </div>
+        <div class="hit">
+          <div class="layer">
+            <div class="ice-cream">
+              <img class="ice-cream__pic" src="#" alt="ice-cream">
+            </div>
+            <div class="text">
+              <h2 class="text__title">415 &#8381;/кг</h2>
+              <p class="text__description">Сливочное крем-брюле с карамельной подливкой</p>
+            </div>
+            <a class="layer__link" href="#">Быстрый просмотор</a>
           </div>
         </div>
       </div>
@@ -158,45 +180,46 @@
         <p class="aside__description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p class="aside__description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </div>
+      <div class="seo">
+        <div class="aside">
+          <p class="aside__description">Новое в нашем блоге</p>
+          <a class="aside__link" href="#"><h2 class="aside__title">10 - способов сервировки фруктовых щербетов к столу</h2></a>
+        </div>
 
-      <div class="aside">
-        <p class="aside__description">Новое в нашем блоге</p>
-        <a class="aside__link" href="#"><h2 class="aside__title">10 - способов сервировки фруктовых щербетов к столу</h2></a>
-        <img class="aside__pic" src="#" alt="sherbet">
-      </div>
-
-      <div class="aside">
-        <p class="aside__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <div class="post">
-          <input class="post-email" type="email" value="Электронная почта" required>
-          <button class="post-send" type="submit">Отправить</button>
+        <div class="aside">
+          <p class="aside__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="post" action="/echo" method="post">
+            <input class="post-email" type="email" value="Электронная почта" required>
+            <button class="post-send" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
+
 
       <div class="map">
         <div class="communication-form">
           <p class="communication-form__description">Адрес главного оффмса и оффлайн магазина:</p>
-          <p class="communication-form__description">Ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="communication-form__description-bold">Ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p class="communication-form__description">Для заказов по телефону:</p>
-          <p class="communication-form__description">8 812 450-25-25</p>
+          <p class="communication-form__description-bold">8 812 450-25-25</p>
           <p class="communication-form__description">С 10 до 20 ежедневно</p>
           <a class="communication-form__link" href="#">Форма обратной связи </a>
-          <div class="input">
-            <form class="form__adress" action="/echo" method="post">
-              <button class="input--close" type="submit"><img src="#" alt="close"></button>
-              <h3 class="input__title">Мы обязательно вас встретим!</h3>
-              <div class="input-block">
-                <input class="input-block__input-name" type="text" placeholder="Как вас зовут?" required>
-              </div>
-              <div class="input-block">
-                <input class="input-block__input-post" type="email" placeholder="Ваша почта для ответа" required>
-              </div>
-              <div class="input-block">
-                <textarea class="input-block__input-comment" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
-              </div>
-              <button class="input--sent" type="submit">Отправить</button>
-            </form>
-          </div>
+        </div>
+        <div class="input">
+          <form class="form__adress" action="/echo" method="post">
+            <button class="input--close" type="submit"><img src="#" alt="close"></button>
+            <h3 class="input__title">Мы обязательно вас встретим!</h3>
+            <div class="input-block">
+              <input class="input-block__input-name" type="text" placeholder="Как вас зовут?" required>
+            </div>
+            <div class="input-block">
+              <input class="input-block__input-post" type="email" placeholder="Ваша почта для ответа" required>
+            </div>
+            <div class="input-block">
+              <textarea class="input-block__input-comment" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
+            </div>
+            <button class="input--sent" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
