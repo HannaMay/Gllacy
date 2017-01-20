@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
   <div class="container">
 
     <header class="header">
@@ -102,83 +101,82 @@
       <h1 class="title">Сливочное мороженое</h1>
 
       <div class="filter-part">
-        <div class="sort">
-          <p class="sort__description">Сортировка:</p>
-          <form class="sort__form" action="/echo" method="post">
+        <form class="sort__form" action="/echo" method="post">
+          <div class="sort">
+            <p class="sort__description">Сортировка:</p>
             <select class="sort__select">
               <option class="sort__option" value="popular">по популярности</option>
               <option class="sort__option" value="cheap">сначала не дорогие</option>
               <option class="sort__option" value="expensive">сначала дорогие</option>
               <option class="sort__option" value="creamy">по жирности</option>
             </select>
-          </form>
-        </div>
-        <div class="price">
-          <p class="price__description">Цена:</p>
-          <label class="price__label">
-            <input class="price__label price__label--input" type="text" name="min" value="100">
-            <span class="price__label price__label--label">руб.</span>
-          </label>
-          <p class="price__description"> - </p>
-          <label class="price__label">
-            <input class="price__label price__label--input" type="text" name="max" value="500">
-            <span class="price__label price__label--label">руб.</span>
-          </label>
-          <div class="range">
-            <div class="range__slider"></div>
-            <div class="range__slider"></div>
+            <div class="price">
+              <p class="price__description">Цена:</p>
+              <label class="price__label">
+                <input class="price__label price__label--input" type="text" name="min" value="100">
+                <span class="price__label price__label--label">руб.</span>
+              </label>
+              <p class="price__description"> - </p>
+              <label class="price__label">
+                <input class="price__label price__label--input" type="text" name="max" value="500">
+                <span class="price__label price__label--label">руб.</span>
+              </label>
+              <div class="range">
+                <div class="range__slider"></div>
+                <div class="range__slider"></div>
+              </div>
+            </div>
+            <div class="creamy">
+              <p class="creamy__description">Жирность:</p>
+              <ul class="radiobtn-list">
+                <li class="radiobtn-list__item">
+                  <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="0%" name="radio">
+                  <label class="radiobtn-list__label" for="0%">0%</label>
+                </li>
+                <li class="radiobtn-list__item">
+                  <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="10%" name="radio" checked>
+                  <label class="radiobtn-list__label" for="10%">10%</label>
+                </li>
+                <li class="radiobtn-list__item">
+                  <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="30%" name="radio">
+                  <label class="radiobtn-list__label" for="30%">30%</label>
+                </li>
+                <li class="radiobtn-list__item">
+                  <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="higher_30%" name="radio">
+                  <label class="radiobtn-list__label" for="higher_30%">Выше 30%</label>
+                </li>
+              </ul>
+            </div>
+            <div class="excipients">
+              <p class="excipients__description">Наполнители:</p>
+              <ul class="checkboxes-list">
+                <li class="checkboxes-list__item">
+                  <input class="checkboxes-list__input" type="checkbox" id="chocolad" checked>
+                  <label class="checkboxes-list__label" for="chocolad">Шоколадные присыпки</label>
+                </li>
+                <li class="checkboxes-list__item">
+                  <input class="checkboxes-list__input" type="checkbox" id="sugar" checked>
+                  <label class="checkboxes-list__label" for="sugar">Сахараные присыпки</label>
+                </li>
+                <li class="checkboxes-list__item">
+                  <input class="checkboxes-list__input" type="checkbox" id="fruits">
+                  <label class="checkboxes-list__label" for="fruits">Фрукты</label>
+                </li>
+                <li class="checkboxes-list__item">
+                  <input class="checkboxes-list__input" type="checkbox" id="syrup">
+                  <label class="checkboxes-list__label" for="syrup">Сиропы</label>
+                </li>
+                <li class="checkboxes-list__item">
+                  <input class="checkboxes-list__input" type="checkbox" id="jam">
+                  <label class="checkboxes-list__label" for="jam">Джемы</label>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="creamy">
-          <p class="creamy__description">Жирность:</p>
-          <ul class="radiobtn-list">
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="0%" name="radio">
-              <label class="radiobtn-list__label" for="0%">0%</label>
-            </li>
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="10%" name="radio" checked>
-              <label class="radiobtn-list__label" for="10%">10%</label>
-            </li>
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="30%" name="radio">
-              <label class="radiobtn-list__label" for="30%">30%</label>
-            </li>
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__item radiobtn-list__item--input" type="radio" id="higher_30%" name="radio">
-              <label class="radiobtn-list__label" for="higher_30%">Выше 30%</label>
-            </li>
-          </ul>
-        </div>
-        <div class="excipients">
-          <p class="excipients__description">Наполнители:</p>
-          <form class="excipients__form" action="/echo" method="post">
-            <ul class="checkboxes-list">
-              <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="chocolad" checked>
-                <label class="checkboxes-list__label" for="chocolad">Шоколадные присыпки</label>
-              </li>
-              <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="sugar" checked>
-                <label class="checkboxes-list__label" for="sugar">Сахараные присыпки</label>
-              </li>
-              <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="fruits">
-                <label class="checkboxes-list__label" for="fruits">Фрукты</label>
-              </li>
-              <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="syrup">
-                <label class="checkboxes-list__label" for="syrup">Сиропы</label>
-              </li>
-              <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="jam">
-                <label class="checkboxes-list__label" for="jam">Джемы</label>
-              </li>
-            </ul>
-          </form>
-          <button class="filter__button" type="button">Применить</button>
-        </div>
+        </form>
+        <button class="filter__button" type="button">Применить</button>
       </div>
+
       <div class="hits">
         <div class="hit">
           <div class="layer">
@@ -325,6 +323,7 @@
           </div>
         </div>
       </div>
+
       <ul class="pages-list">
         <li class="pages-list__item">
           <a class="pages-list__link pages-list__link--arrow" href="#"></a>
@@ -348,6 +347,7 @@
           <a class="pages-list__link pages-list__link--arrow" href="#"></a>
         </li>
       </ul>
+
     </main>
 
     <footer class="footer">
