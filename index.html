@@ -68,11 +68,11 @@
             </div>
           </li>
           <li class="nav__item main-nav__item--login">
-            <div class="login">
-              <a class="login__link" href="#">
-                <img class="login__pic" src="#" alt="login">
+            <a class="login__link" href="#">
+              <img class="login__pic" src="#" alt="login">
               Вход
-              </a>
+            </a>
+            <div class="login">
               <form class="login-form" action="/echo" method="post">
                 <div class="login-form__block">
                   <input class="login-form__input" type="email" placeholder="Электронная почта" required>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="login-form__block">
                   <button class="login-form__button btn" type="submit">
-                    Войти
+                  Войти
                   </button>
                   <a class="login-form__link" href="#">
                     Забыли пароль?
@@ -95,12 +95,10 @@
             </div>
           </li>
           <li class="nav__item nav__item--basket">
-            <div class="basket">
-              <a class="basket__link" href="#">
-                <img class="basket__pic" src="#" alt="basket">
-                Пусто
-              </a>
-            </div>
+            <a class="basket__link" href="#">
+              <img class="basket__pic" src="#" alt="basket">
+              Пусто
+            </a>
           </li>
         </ul>
       </nav>
@@ -117,52 +115,38 @@
     <main class="main">
 
       <div class="slider">
-        <div class="title-block">
-          <h1 class="title-block__title">
-            Крем-брюле и пломбир с малиновым джемом
-          </h1>
-        </div>
-        <div class="slider slider-link">
-          <a class="slider-link__link btn" href="#">
-            Дайте оба!
-          </a>
-        </div>
-        <div class="title-block">
-          <h1 class="title-block__title">
-            Шоколадный пломбир и лимонный сорбет
-          </h1>
-        </div>
-        <div class="slider slider-link">
-          <a class="slider-link__link btn" href="#">
-            Дайте оба!
-          </a>
-        </div>
-        <div class="title-block">
-          <h1 class="title-block__title">
-            Пломбир с помадкой и клубничный щербет
-          </h1>
-        </div>
-        <div class="slider slider-link">
-          <a class="slider-link__link btn" href="#">
-            Дайте оба!
-          </a>
-        </div>
-        <div class="slider slider-control">
-          <ul class="radiobtn-list">
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__input" type="radio" id="1" name="radio" checked>
-              <label class="radiobtn-list__label" for="1"></label>
-            </li>
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__input" type="radio" id="2" name="radio">
-              <label class="radiobtn-list__label" for="2"></label>
-            </li>
-            <li class="radiobtn-list__item">
-              <input class="radiobtn-list__input" type="radio" id="3" name="radio">
-              <label class="radiobtn-list__label" for="3"></label>
-            </li>
-          </ul>
-        </div>
+        <h1 class="slider__title">
+          Крем-брюле и пломбир с малиновым джемом
+        </h1>
+        <a class="slider__link btn" href="#">
+          Дайте оба!
+        </a>
+        <h1 class="slider__title">
+          Шоколадный пломбир и лимонный сорбет
+        </h1>
+        <a class="slider__link btn" href="#">
+          Дайте оба!
+        </a>
+        <h1 class="slider__title">
+          Пломбир с помадкой и клубничный щербет
+        </h1>
+        <a class="slider__link btn" href="#">
+          Дайте оба!
+        </a>
+        <ul class="radiobtn-list">
+          <li class="radiobtn-list__item">
+            <input class="radiobtn-list__input" type="radio" id="1" name="radio" checked>
+            <label class="radiobtn-list__label" for="1"></label>
+          </li>
+          <li class="radiobtn-list__item">
+            <input class="radiobtn-list__input" type="radio" id="2" name="radio">
+            <label class="radiobtn-list__label" for="2"></label>
+          </li>
+          <li class="radiobtn-list__item">
+            <input class="radiobtn-list__input" type="radio" id="3" name="radio">
+            <label class="radiobtn-list__label" for="3"></label>
+          </li>
+        </ul>
       </div>
 
       <div class="banner">
@@ -333,9 +317,7 @@
         </div>
         <div class="input">
           <form class="form__adress" action="/echo" method="post">
-            <button class="button--close" type="button">
-              <img src="#" alt="close">
-            </button>
+            <button class="button--close" type="button"></button>
             <h3 class="input__title">
               Мы обязательно вас встретим!
             </h3>
@@ -358,6 +340,7 @@
     </main>
 
     <footer class="footer">
+
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#twitr"></a>
@@ -394,6 +377,7 @@
           </a>
         </p>
       </div>
+
     </footer>
 
   </div>
