@@ -59,39 +59,38 @@
           </li>
         </ul>
         <ul class="nav__list nav__list--user ">
-          <li class="nav__item nav__item--search-icon">
-            <div class="search-icon">
-              <a class="search-icon__link" href="#"></a>
-              <form class="" action="/echo" method="post">
-                <input class="search-icon__input" type="search" value="Что ищем?">
+          <li class="nav__item nav__item--search">
+            <a class="search__link" href="#"></a>
+            <div class="search">
+              <form class="search__form" action="/echo" method="post">
+                <input class="search__input" type="search" value="Что ищем?">
               </form>
             </div>
           </li>
           <li class="nav__item nav__item--login">
-            <div class="login">
-              <a class="login__link" href="#">
-                <img class="login__pic" src="#" alt="login">
-                Вход
-              </a>
+            <a class="login__link" href="#">
+              <img class="login__pic" src="#" alt="login">
+              Вход
+            </a>
               <form class="login-form" action="/echo" method="post">
-                <div class="login-form__block">
-                  <input class="login-form__input" type="email" placeholder="Электронная почта" required>
-                </div>
-                <div class="login-form__block">
-                  <input class="login-form__input" type="password" placeholder="Пароль" required>
-                </div>
-                <div class="login-form__block">
-                  <button class="login-form__button btn" type="submit">
-                    Войти
-                  </button>
-                  <a class="login-form__link" href="#">
-                    Забыли пароль?
-                  </a>
-                  <a class="login-form__link" href="#">
-                    Новая регестрация
-                  </a>
-                </div>
-              </form>
+              <div class="login-form__block">
+                <input class="login-form__input" type="email" placeholder="Электронная почта" required>
+              </div>
+              <div class="login-form__block">
+                <input class="login-form__input" type="password" placeholder="Пароль" required>
+              </div>
+              <div class="login-form__block">
+                <button class="login-form__button btn" type="submit">
+                Войти
+                </button>
+                <a class="login-form__link" href="#">
+                  Забыли пароль?
+                </a>
+                <a class="login-form__link" href="#">
+                  Новая регестрация
+                </a>
+              </div>
+            </form>
             </div>
           </li>
           <li class="nav__item nav__item--basket">
@@ -302,7 +301,7 @@
                 </li>
               </ul>
             </div>
-            <button class="filter__button" type="sumbit">
+            <button class="filter__button" type="submit">
               Применить
             </button>
           </div>
