@@ -10,19 +10,19 @@
   <div class="container">
 
     <header class="header">
-      <div class="logo">
+      <a class="logo" href="#">
         <img class="logo__pic" src="#" alt="logo">
-      </div>
+      </a>
       <nav class="main-nav">
         <ul class="main-nav__list main-nav__list--main">
           <li class="main-nav__item main-nav__item--dropdown">
-            <a class="main-nav__link" href="#">Каталог</a>
-            <ul class="main-nav__list main-nav__list--сatalog">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Новинки</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Сливочное</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Щербеты</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Фруктовый лёд</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Мелорин</a></li>
+            <a class="main-nav__link">Каталог</a>
+            <ul class="dropdown-nav__list main-nav__list--сatalog">
+              <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Новинки</a></li>
+              <li class="dropdown-nav__item"><a class="dropdown-nav__link">Сливочное</a></li>
+              <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Щербеты</a></li>
+              <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Фруктовый лёд</a></li>
+              <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Мелорин</a></li>
             </ul>
           </li>
           <li class="main-nav__item">
@@ -32,8 +32,8 @@
             <a class="main-nav__link" href="#">О компании</a>
           </li>
         </ul>
-        <ul class="main-nav__list main-nav__list--user ">
-          <li class="main-nav__item main-nav__item--search-icon">
+        <ul class="nav__list nav__list--user ">
+          <li class="nav__item nav__item--search-icon">
             <div class="search-icon">
               <a class="search-icon__link" href="#"></a>
               <form class="" action="/echo" method="post">
@@ -41,7 +41,7 @@
               </form>
             </div>
           </li>
-          <li class="main-nav__item main-nav__item--login">
+          <li class="nav__item nav__item--login">
             <div class="login">
               <a class="login__link" href="#"><img class="login__pic" src="#" alt="login">Вход</a>
               <form class="login-form" action="/echo" method="post">
@@ -52,31 +52,39 @@
                   <input class="login-form__input" type="password" placeholder="Пароль" required>
                 </div>
                 <div class="login-form__block">
-                  <button class="login-form__button" type="submit">Войти</button>
+                  <button class="login-form__button btn" type="submit">Войти</button>
                   <a class="login-form__link" href="#">Забыли пароль?</a>
                   <a class="login-form__link" href="#">Новая регестрация</a>
                 </div>
               </form>
             </div>
           </li>
-          <li class="main-nav__item main-nav__item--basket">
+          <li class="nav__item nav__item--basket">
             <div class="basket">
               <a class="basket__link" href="#"><img class="basket__pic" src="#" alt="basket">2 товара</a>
               <div class="basket__block">
                 <table class="basket-list__item basket-list__item--table">
                   <tr class="basket-list__item basket-list__item--row">
+                    <td class="basket-list__item basket-list__item--column">
+                      <button class="basket-list__item basket-list__item--button button--close" type="button" name="close"><img src="#" alt="close"></button>
+                    </td>
+                    <td class="basket-list__item basket-list__item--column"><img class="basket-list__item basket-list__item--pic" src="#" alt="ice cream"></td>
                     <td class="basket-list__item basket-list__item--column">Пломбир с апельсиновым джемом</td>
                     <td class="basket-list__item basket-list__item--column">1,5*200 руб</td>
                     <td class="basket-list__item basket-list__item--column">300</td>
                   </tr>
                   <tr class="basket-list__item basket-list__item--row">
+                    <td class="basket-list__item basket-list__item--column">
+                      <button class="basket-list__item basket-list__item--button button--close" type="button" name="close"><img src="#" alt="close"></button>
+                    </td>
+                    <td class="basket-list__item basket-list__item--column"><img class="basket-list__item basket-list__item--pic" src="#" alt="ice cream"></td>
                     <td class="basket-list__item basket-list__item--column">Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td class="basket-list__item basket-list__item--column">1,5*300 руб.</td>
                     <td class="basket-list__item basket-list__item--column">450</td>
                   </tr>
                 </table>
                 <p class="basket__description"> Итог:750 руб.</p>
-                <a class="basket__link" href="#">Оформить заказ</a>
+                <a class="basket__link btn" href="#">Оформить заказ</a>
               </div>
             </div>
           </li>
@@ -95,32 +103,40 @@
         <p class="breadcrumbs__arrow">»</p>
         <a class="breadcrumbs__link" href="#">Каталог</a>
         <p class="breadcrumbs__arrow">»</p>
-        <a class="breadcrumbs__link" href="#">Сливочное</a>
+        <a class="breadcrumbs__link">Сливочное</a>
       </div>
 
       <h1 class="title">Сливочное мороженое</h1>
 
       <div class="filter-part">
-        <form class="sort__form" action="/echo" method="post">
-          <div class="sort">
-            <p class="sort__description">Сортировка:</p>
-            <select class="sort__select">
-              <option class="sort__option" value="popular">по популярности</option>
-              <option class="sort__option" value="cheap">сначала не дорогие</option>
-              <option class="sort__option" value="expensive">сначала дорогие</option>
-              <option class="sort__option" value="creamy">по жирности</option>
-            </select>
+        <form class="filter-part__form" action="/echo" method="post">
+          <div class="filter-part__form filter-part__form--block">
+            <div class="sort">
+              <p class="sort__description">Сортировка:</p>
+              <select class="sort__select">
+                <option class="sort__option" value="popular">по популярности</option>
+                <option class="sort__option" value="cheap">сначала не дорогие</option>
+                <option class="sort__option" value="expensive">сначала дорогие</option>
+                <option class="sort__option" value="creamy">по жирности</option>
+              </select>
+            </div>
             <div class="price">
-              <p class="price__description">Цена:</p>
-              <label class="price__label">
-                <input class="price__label price__label--input" type="text" name="min" value="100">
-                <span class="price__label price__label--label">руб.</span>
-              </label>
-              <p class="price__description"> - </p>
-              <label class="price__label">
-                <input class="price__label price__label--input" type="text" name="max" value="500">
-                <span class="price__label price__label--label">руб.</span>
-              </label>
+              <ul class="price-list">
+                <li class="price-list__item">
+                  <p class="price__description">Цена:</p>
+                </li>
+                <li class="price-list__item">
+                  <input class="price__label price__label--input" type="text" name="min" value="100" id="min">
+                  <label class="price__label" for="min">руб.</label>
+                </li>
+                <li class="price-list__item">
+                  <p class="price__description"> - </p>
+                </li>
+                <li class="price-list__item">
+                  <input class="price__label price__label--input" type="text" name="max" value="500" id="max">
+                  <label class="price__label" for="max">руб.</label>
+                </li>
+              </ul>
               <div class="range">
                 <div class="range__slider"></div>
                 <div class="range__slider"></div>
@@ -147,34 +163,36 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="filter-part__form filter-part__form--block">
             <div class="excipients">
               <p class="excipients__description">Наполнители:</p>
               <ul class="checkboxes-list">
                 <li class="checkboxes-list__item">
-                  <input class="checkboxes-list__input" type="checkbox" id="chocolad" checked>
+                  <input class="checkboxes-list__input" type="checkbox" id="chocolad" name="checkbox" checked>
                   <label class="checkboxes-list__label" for="chocolad">Шоколадные присыпки</label>
                 </li>
                 <li class="checkboxes-list__item">
-                  <input class="checkboxes-list__input" type="checkbox" id="sugar" checked>
+                  <input class="checkboxes-list__input" type="checkbox" id="sugar" name="checkbox" checked>
                   <label class="checkboxes-list__label" for="sugar">Сахараные присыпки</label>
                 </li>
                 <li class="checkboxes-list__item">
-                  <input class="checkboxes-list__input" type="checkbox" id="fruits">
+                  <input class="checkboxes-list__input" type="checkbox" id="fruits" name="checkbox">
                   <label class="checkboxes-list__label" for="fruits">Фрукты</label>
                 </li>
                 <li class="checkboxes-list__item">
-                  <input class="checkboxes-list__input" type="checkbox" id="syrup">
+                  <input class="checkboxes-list__input" type="checkbox" id="syrup" name="checkbox">
                   <label class="checkboxes-list__label" for="syrup">Сиропы</label>
                 </li>
                 <li class="checkboxes-list__item">
-                  <input class="checkboxes-list__input" type="checkbox" id="jam">
+                  <input class="checkboxes-list__input" type="checkbox" id="jam" name="checkbox">
                   <label class="checkboxes-list__label" for="jam">Джемы</label>
                 </li>
               </ul>
             </div>
+            <button class="filter__button" type="button">Применить</button>
           </div>
         </form>
-        <button class="filter__button" type="button">Применить</button>
       </div>
 
       <div class="hits">
@@ -185,9 +203,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">310 &#8381;/кг</h2>
-              <p class="text__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <a class="text__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -197,9 +215,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">380 &#8381;/кг</h2>
-              <p class="text__description">Сливочно-кофейное с кусочками шоколада</p>
+              <a class="text__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -209,9 +227,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">355 &#8381;/кг</h2>
-              <p class="text__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <a class="text__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -221,9 +239,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">415 &#8381; /кг</h2>
-              <p class="text__description">Сливочное крем-брюле с карамельной подливкой</p>
+              <a class="text__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -233,9 +251,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">325 &#8381; /кг</h2>
-              <p class="text__description">Сливочное с брусничным жлемом</p>
+              <a class="text__link" href="#">Сливочное с брусничным жлемом</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -245,9 +263,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">410 &#8381; /кг</h2>
-              <p class="text__description">Сливочно-черничное с цельными ягодам черники</p>
+              <a class="text__link" href="#">Сливочно-черничное с цельными ягодам черники</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -257,9 +275,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">375 &#8381; /кг</h2>
-              <p class="text__description">Сливочно-лиммоное с карамельной посыпкой</p>
+              <a class="text__link" href="#">Сливочно-лиммоное с карамельной посыпкой</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -269,9 +287,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">320 &#8381; /кг</h2>
-              <p class="text__description">Сливочное с шоколадной стружкой</p>
+              <a class="text__link" href="#">Сливочное с шоколадной стружкой</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -281,9 +299,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">440 &#8381; /кг</h2>
-              <p class="text__description">Сливочно-ванильное с кусочками шоколада</p>
+              <a class="text__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -293,9 +311,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">435 &#8381; /кг</h2>
-              <p class="text__description">Сливочное с ментоловым сиропом</p>
+              <a class="text__link" href="#">Сливочное с ментоловым сиропом</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -305,9 +323,9 @@
             </div>
             <div class="text">
               <h2 class="text__title">355 &#8381; /кг</h2>
-              <p class="text__description">Сливочное с кусочками чёрного шоколада</p>
+              <a class="text__link" href="#">Сливочное с кусочками чёрного шоколада</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
         <div class="hit">
@@ -317,34 +335,34 @@
             </div>
             <div class="text">
               <h2 class="text__title">420 &#8381; /кг</h2>
-              <p class="text__description">Сливочное с мятным сиропом</p>
+              <a class="text__link" href="#">Сливочное с мятным сиропом</a>
             </div>
-            <a class="layer__link" href="#">Быстрый просмотор</a>
+            <a class="layer__link btn" href="#">Быстрый просмотор</a>
           </div>
         </div>
       </div>
 
-      <ul class="pages-list">
-        <li class="pages-list__item">
-          <a class="pages-list__link pages-list__link--arrow" href="#"></a>
+      <ul class="pagination-list ">
+        <li class="pagination-list__item">
+          <a class="pagination-list__link pagination-list__link--arrow" href="#"></a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link" href="#">1</a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link" href="#">1</a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link" href="#">2</a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link" href="#">2</a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link" href="#">3</a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link" href="#">3</a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link" href="#">4</a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link" href="#">4</a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link" href="#">5</a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link" href="#">5</a>
         </li>
-        <li class="pages-list__item">
-          <a class="pages-list__link pages-list__link--arrow" href="#"></a>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link pagination-list__link--arrow" href="#"></a>
         </li>
       </ul>
 
