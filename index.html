@@ -12,11 +12,12 @@
   <div class="container">
 
     <header class="header">
+
       <a class="logo">
         <img class="logo__pic" src="img/logo.png" width="155" height="65" alt="logo">
       </a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--main">
           <li class="main-nav__item main-nav__item--dropdown">
             <a class="main-nav__link" href="#">
               Каталог
@@ -112,43 +113,46 @@
           8 812 450-25-25
         </p>
       </div>
+
     </header>
 
     <main class="main">
 
       <div class="slider">
-        <h1 class="slider__title">
+        <h1 class="slider__title slider__title--one">
           Крем-брюле и пломбир с малиновым джемом
         </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
-        </a>
-        <h1 class="slider__title">
+        <h1 class="slider__title slider__title--two">
           Шоколадный пломбир и лимонный сорбет
         </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
-        </a>
-        <h1 class="slider__title">
+        <h1 class="slider__title slider__title--three">
           Пломбир с помадкой и клубничный щербет
         </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
+        <div class="slider-bottom">
+          <ul class="radiobtn__list">
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="1" name="radio" checked>
+              <label class="radiobtn__label" for="1"></label>
+            </li>
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="2" name="radio">
+              <label class="radiobtn-list__label" for="2"></label>
+            </li>
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="3" name="radio">
+              <label class="radiobtn__label" for="3"></label>
+            </li>
+          </ul>
+        <a class="slider__link slider__link--one  btn" href="#">
+          Давайте оба!
         </a>
-        <ul class="radiobtn-list">
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="1" name="radio" checked>
-            <label class="radiobtn-list__label" for="1"></label>
-          </li>
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="2" name="radio">
-            <label class="radiobtn-list__label" for="2"></label>
-          </li>
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="3" name="radio">
-            <label class="radiobtn-list__label" for="3"></label>
-          </li>
-        </ul>
+        <a class="slider__link slider__link--two btn" href="#">
+          Давайте оба!
+        </a>
+        <a class="slider__link slider__link--three" href="#">
+          Давайте оба!
+        </a>
+        </div>
       </div>
 
       <div class="banner">
@@ -247,13 +251,13 @@
             </div>
           </div>
         </div>
-      </divs>
+      </div>
 
       <div class="content">
         <h2 class="content__title">
           Магазин Глейси - это онлайн и офлайн магазин по продаже собственного производства на развес
         </h2>
-        <div class="content-block">
+        <div class="content-block-left">
           <p class="content__description">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </p>
@@ -261,7 +265,7 @@
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </div>
-        <div class="content-block">
+        <div class="content-block-right">
           <p class="content__description">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
@@ -343,18 +347,18 @@
 
     <footer class="footer">
 
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#twitr"></a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#twit"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#inst"></a>
+        <li class="social__item">
+          <a class="social__link" href="#inst"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#fb"></a>
+        <li class="social__item">
+          <a class="social__link" href="#fb"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#vk"></a>
+        <li class="social__item">
+          <a class="socialt__link" href="#vk"></a>
         </li>
       </ul>
       <div class="about-us">
@@ -362,10 +366,10 @@
           Для поставщиков
         </a>
         <a class="about-us__link" href="#">
-          О прооизводстве
+          Наши документы
         </a>
         <a class="about-us__link" href="#">
-          Наши документы
+          О прооизводстве
         </a>
         <a class="about-us__link" href="#">
           Экологические стандарты
