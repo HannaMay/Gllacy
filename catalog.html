@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -150,14 +151,7 @@
         </ul>
       </nav>
       </div>
-      <div class="contacts">
-        <p class="contacts__description">
-          С 10 до 20, ежедневно
-        </p>
-        <p class="contacts__description contacts__description--bold">
-          8 812 450-25-25
-        </p>
-      </div>
+      <div class="header-bottom">
       <div class="breadcrumbs">
         <a class="breadcrumbs__link" href="#">
           Главная
@@ -169,6 +163,15 @@
           Сливочное
         </a>
       </div>
+      <div class="contacts">
+        <p class="contacts__description">
+          С 10 до 20, ежедневно
+        </p>
+        <p class="contacts__description contacts__description--bold">
+          8 812 450-25-25
+        </p>
+      </div>
+    </div>
     </header>
 
     <main class="main">
@@ -303,25 +306,26 @@
       </div>
 
       <div class="hits">
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/orange.jpg" alt="ice-cream">
-          </div>
-          <h2 class="hit__title">
-            310 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hit">
+        <div class="hits-row1">
+         <div class="hit">
+           <div class="hit__img">
+             <img class="hit__pic" src="img/orange.jpg" alt="ice-cream">
+           </div>
+           <h2 class="hit__title">
+             310 &#8381;/кг
+           </h2>
+           <a class="hit__link" href="#">
+             Сливочное с апельсиновым джемом и цитрусовой стружкой
+           </a>
+           <div class="hit-hover">
+             <div class="hit-hover__block">
+               <a class="hit-hover__link btn" href="#">
+                 Быстрый просмотор
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="hit">
           <div class="hit__img">
             <img class="hit__pic" src="img/coffe.jpg" alt="ice-cream">
           </div>
@@ -353,100 +357,104 @@
             <div class="hit-hover__block">
               <a class="hit-hover__link btn" href="#">
                 Быстрый просмотор
-              </a>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hit hit-last">
+            <div class="hit__img">
+              <img class="hit__pic" src="img/сreme-brulee.jpg" alt="ice-cream">
+            </div>
+            <h2 class="hit__title">
+              415 &#8381;/кг
+            </h2>
+            <a class="hit__link" href="#">
+              Сливочное крем-брюле с карамельной подливкой
+            </a>
+            <div class="hit-hover">
+              <div class="hit-hover__block">
+                <a class="hit-hover__link btn" href="#">
+                  Быстрый просмотор
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/сreme-brulee.jpg" alt="ice-cream">
+        <div class="hits-row2">
+          <div class="hit">
+            <div class="hit__img">
+              <img class="hit__pic" src="img/cowberry.jpg" alt="ice-cream">
+            </div>
+            <h2 class="hit__title">
+              325 &#8381;/кг
+            </h2>
+            <a class="hit__link" href="#">
+              Сливочное с брусничным жлемом
+            </a>
+            <div class="hit-hover">
+              <div class="hit-hover__block">
+                <a class="hit-hover__link btn" href="#">
+                  Быстрый просмотор
+                </a>
+              </div>
+            </div>
           </div>
-          <h2 class="hit__title">
-            415 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочное крем-брюле с карамельной подливкой
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
+          <div class="hit">
+            <div class="hit__img">
+              <img class="hit__pic" src="img/blackberry.jpg" alt="ice-cream">
+            </div>
+            <h2 class="hit__title">
+              410 &#8381;/кг
+            </h2>
+            <a class="hit__link" href="#">
+              Сливочно-черничное с цельными ягодам черники
+            </a>
+            <div class="hit-hover">
+              <div class="hit-hover__block">
+                <a class="hit-hover__link btn" href="#">
+                  Быстрый просмотор
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hit">
+            <div class="hit__img">
+              <img class="hit__pic" src="img/lemon.jpg" alt="ice-cream">
+            </div>
+            <h2 class="hit__title">
+              375 &#8381;/кг
+            </h2>
+            <a class="hit__link" href="#">
+              Сливочно-лиммоное с карамельной посыпкой
+            </a>
+            <div class="hit-hover">
+              <div class="hit-hover__block">
+                <a class="hit-hover__link btn" href="#">
+                  Быстрый просмотор
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hit hit-last">
+            <div class="hit__img">
+              <img class="hit__pic" src="img/chocolate.jpg" alt="ice-cream">
+            </div>
+            <h2 class="hit__title">
+              320 &#8381;/кг
+            </h2>
+            <a class="hit__link" href="#">
+              Сливочное с шоколадной стружкой
+            </a>
+            <div class="hit-hover">
+              <div class="hit-hover__block">
+                <a class="hit-hover__link btn" href="#">
+                  Быстрый просмотор
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/cowberry.jpg" alt="ice-cream">
-          </div>
-          <h2 class="hit__title">
-            325 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочное с брусничным жлемом
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/blackberry.jpg" alt="ice-cream">
-          </div>
-          <h2 class="hit__title">
-            410 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочно-черничное с цельными ягодам черники
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/lemon.jpg" alt="ice-cream">
-          </div>
-          <h2 class="hit__title">
-            375 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочно-лиммоное с карамельной посыпкой
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hit">
-          <div class="hit__img">
-            <img class="hit__pic" src="img/chocolate.jpg" alt="ice-cream">
-          </div>
-          <h2 class="hit__title">
-            320 &#8381;/кг
-          </h2>
-          <a class="hit__link" href="#">
-            Сливочное с шоколадной стружкой
-          </a>
-          <div class="hit-hover">
-            <div class="hit-hover__block">
-              <a class="hit-hover__link btn" href="#">
-                Быстрый просмотор
-              </a>
-            </div>
-          </div>
-        </div>
+        <div class="hits-row3">
         <div class="hit">
           <div class="hit__img">
             <img class="hit__pic" src="img/vanilla.jpg" alt="ice-cream">
@@ -501,7 +509,7 @@
             </div>
           </div>
         </div>
-        <div class="hit">
+        <div class="hit hit-last">
           <div class="hit__img">
             <img class="hit__pic" src="img/mint.jpg" alt="ice-cream">
           </div>
@@ -518,6 +526,7 @@
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <div class="pagination">
@@ -575,26 +584,32 @@
         </li>
       </ul>
       <div class="about-us">
-        <a class="about-us__link about-us__link--bold" href="#">
-          Для поставщиков
-        </a>
-        <a class="about-us__link" href="#">
-          О прооизводстве
-        </a>
+        <div class="about-us-column">
+          <a class="about-us__link about-us__link--bold" href="#">
+            Для поставщиков
+          </a>
+          <a class="about-us__link" href="#">
+            О прооизводстве
+          </a>
+        </div>
+        <div class="about-us-column">
         <a class="about-us__link" href="#">
           Наши документы
         </a>
         <a class="about-us__link" href="#">
           Экологические стандарты
         </a>
+        </div>
       </div>
       <div class="copyright">
-        <p class="copyright__description">
-          Сделано в
-          <a class="copyright__link" href="#htmlacademy">
-            HTML Academy 2017
-          </a>
-        </p>
+        <div class="copyright-block">
+          <p class="copyright-block__description">
+            Сделано в
+            <a class="copyright-block__link" href="#htmlacademy">
+              HTML Academy 2017
+            </a>
+          </p>
+        </div>
       </div>
 
     </footer>
