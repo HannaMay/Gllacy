@@ -410,21 +410,27 @@ h2 {
 }
 .map__pic{
   width: 100%;
+  float: left;
 }
 .communication-form {
-  position: absolute;
-  top: 202%;
-  right: 23%;
+  float: right;
   box-sizing: border-box;
   width: 300px;
   padding-left: 23px;
   padding-top: 32px;
   padding-right: 25px;
   padding-bottom: 28px;
+  margin-top: -364spx;
+  margin-right: 27px;
   color: #000;
   background-color: #fff;
 }
-
+.map::after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
 .input {
   position: absolute;
   top:338px;
@@ -468,4 +474,4 @@ h2 {
   width: 190px;
   font-size: 12px;
   line-height: 16px;
-}
+  }
