@@ -37,9 +37,6 @@ h2 {
 .logo {
   float: left;
 }
-.header-top{
-  width: 100%;
-}
 .header-top::after{
   display: block;
   content: "";
@@ -298,7 +295,6 @@ h2 {
   height: 0;
 }
 .hits {
-  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -353,7 +349,8 @@ h2 {
   height: 0;
 }
 .pagination__list {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   padding-left: 0;
   list-style: none;
 }
@@ -361,27 +358,18 @@ h2 {
   width: 28px;
   margin-top: 15px;
   margin-bottom: 25px;
-  display: inline-block;
   margin-right: 1px;
-}
-.pagination::after{
-  content: "";
-  clear: both;
-  display: block;
-  height: 0;
 }
 
 .map{
-  width: 100%;
   min-height: 430px;
   margin-bottom: 20px;
   background: url("../img/map.jpg");
 }
-
 .communication-form {
   position: absolute;
   top: 1960px;
-  left: 1220px;
+  right: 395px;
   box-sizing: border-box;
   width: 300px;
   padding-left: 23px;
@@ -391,12 +379,7 @@ h2 {
   color: #000;
   background-color: #fff;
 }
-.map::after{
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
-}
+
 .input {
   position: absolute;
   top:338px;
