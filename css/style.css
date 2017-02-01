@@ -25,14 +25,12 @@ h2 {
   width: 1200px;
   margin: 0 auto;
 }
-.wapper{
+.header {
+  margin: 0 auto;
   padding-top: 5px;
   padding-left: 2.3%;
   padding-bottom: 20px;
   padding-right: 2.3%;
-}
-.header {
-  margin: 0 auto;
 }
 .logo {
   float: left;
@@ -93,15 +91,29 @@ h2 {
   left: 65%;
   display: none;
 }
+.login__link {
+  color: #fff;
+  text-decoration: none;
+}
 .login {
   position: absolute;
   top: 60px;
-  left: 60%;
+  left: 62%;
   display: none;
+  width: 277px;
 }
 .login__link {
   color: #fff;
   text-decoration: none;
+}
+.login-form__link{
+  float: right;
+}
+.login-form__block::after{
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
 }
 .basket__link {
   color: #fff;
@@ -144,6 +156,10 @@ h2 {
 
 .main {
   margin: 0 auto;
+  padding-top: 5px;
+  padding-left: 2.3%;
+  padding-bottom: 20px;
+  padding-right: 2.3%;
 }
 .title {
   width: 382px;
@@ -399,6 +415,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5px;
+  padding-left: 2.3%;
+  padding-bottom: 20px;
+  padding-right: 2.3%;
 }
 .social__list{
   display: flex;
