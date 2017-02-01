@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,98 +13,101 @@
   <div class="container">
 
     <header class="header">
-      <a class="logo">
-        <img class="logo__pic" src="img/logo.png" width="155" height="65" alt="logo">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--dropdown">
-            <a class="main-nav__link" href="#">
-              Каталог
-            </a>
-            <ul class="dropdown-nav__list main-nav__list--сatalog">
-              <li class="dropdown-nav__item">
-                <a class="dropdown-nav__link" href="#">
-                  Новинки
-                </a>
-              </li>
-              <li class="dropdown-nav__item">
-                <a class="dropdown-nav__link" href="#">
-                  Сливочное
-                </a>
-              </li>
-              <li class="dropdown-nav__item">
-                <a class="dropdown-nav__link" href="#">
-                  Щербеты
-                </a>
-              </li>
-              <li class="dropdown-nav__item">
-                <a class="dropdown-nav__link" href="#">
-                  Фруктовый лёд
-                </a>
-              </li>
-              <li class="dropdown-nav__item">
-                <a class="dropdown-nav__link" href="#">
-                  Мелорин
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              О компании
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__list nav__list--user ">
-          <li class="nav__item nav__item--search">
-            <a class="search__link" href="#"></a>
-            <div class="search">
-              <form class="search__form" action="/echo" method="post">
-                <input class="search__input" type="search" value="Что ищем?">
-              </form>
-            </div>
-          </li>
-          <li class="nav__item main-nav__item--login">
-            <a class="login__link" href="#">
-              <img class="login__pic" src="img/login.png"  alt="login">
-              Вход
-            </a>
-            <div class="login">
-              <form class="login-form" action="/echo" method="post">
-                <div class="login-form__block">
-                  <input class="login-form__input" type="email" placeholder="Электронная почта" required>
-                </div>
-                <div class="login-form__block">
-                  <input class="login-form__input" type="password" placeholder="Пароль" required>
-                </div>
-                <div class="login-form__block">
-                  <button class="login-form__button btn" type="submit">
-                    Войти
-                  </button>
-                  <a class="login-form__link" href="#">
-                    Забыли пароль?
+
+      <div class="header-top">
+        <a class="logo">
+          <img class="logo__pic" src="img/logo.png" width="155" height="65" alt="logo">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list main-nav__list--main">
+            <li class="main-nav__item main-nav__item--dropdown">
+              <a class="main-nav__link" href="#">
+                Каталог
+              </a>
+              <ul class="dropdown-nav__list main-nav__list--сatalog">
+                <li class="dropdown-nav__item">
+                  <a class="dropdown-nav__link" href="#">
+                    Новинки
                   </a>
-                  <a class="login-form__link" href="#">
-                    Новая регестрация
+                </li>
+                <li class="dropdown-nav__item">
+                  <a class="dropdown-nav__link" href="#">
+                    Сливочное
                   </a>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="nav__item nav__item--basket">
-            <a class="basket__link" href="#">
-              <img class="basket__pic" src="img/basket.png"  alt="basket">
-              Пусто
-            </a>
-          </li>
-        </ul>
-      </nav>
+                </li>
+                <li class="dropdown-nav__item">
+                  <a class="dropdown-nav__link" href="#">
+                    Щербеты
+                  </a>
+                </li>
+                <li class="dropdown-nav__item">
+                  <a class="dropdown-nav__link" href="#">
+                    Фруктовый лёд
+                  </a>
+                </li>
+                <li class="dropdown-nav__item">
+                  <a class="dropdown-nav__link" href="#">
+                    Мелорин
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--user ">
+            <li class="nav__item nav__item--search">
+              <a class="search__link" href="#"></a>
+              <div class="search">
+                <form class="search__form" action="/echo" method="post">
+                  <input class="search__input" type="search" value="Что ищем?">
+                </form>
+              </div>
+            </li>
+            <li class="nav__item main-nav__item--login">
+              <a class="login__link" href="#">
+                <img class="login__pic" src="img/login.png"  alt="login">
+                Вход
+              </a>
+              <div class="login">
+                <form class="login-form" action="/echo" method="post">
+                  <div class="login-form__block">
+                    <input class="login-form__input" type="email" placeholder="Электронная почта" required>
+                  </div>
+                  <div class="login-form__block">
+                    <input class="login-form__input" type="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="login-form__block">
+                    <button class="login-form__button btn" type="submit">
+                      Войти
+                    </button>
+                    <a class="login-form__link" href="#">
+                      Забыли пароль?
+                    </a>
+                    <a class="login-form__link" href="#">
+                      Новая регестрация
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav__item nav__item--basket">
+              <a class="basket__link" href="#">
+                <img class="basket__pic" src="img/basket.png"  alt="basket">
+                Пусто
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="contacts">
         <p class="contacts__description">
           С 10 до 20, ежедневно
@@ -112,49 +116,53 @@
           8 812 450-25-25
         </p>
       </div>
+
     </header>
 
     <main class="main">
 
       <div class="slider">
-        <h1 class="slider__title">
+        <p class="slider__title slider__title--one">
           Крем-брюле и пломбир с малиновым джемом
-        </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
-        </a>
-        <h1 class="slider__title">
+        </p>
+        <p class="slider__title slider__title--two">
           Шоколадный пломбир и лимонный сорбет
-        </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
-        </a>
-        <h1 class="slider__title">
+        </p>
+        <p class="slider__title slider__title--three">
           Пломбир с помадкой и клубничный щербет
-        </h1>
-        <a class="slider__link btn" href="#">
-          Дайте оба!
+        </p>
+        <div class="slider-bottom">
+          <ul class="radiobtn__list">
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="1" name="radio" checked>
+              <label class="radiobtn__label" for="1"></label>
+            </li>
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="2" name="radio">
+              <label class="radiobtn-list__label" for="2"></label>
+            </li>
+            <li class="radiobtn__item">
+              <input class="radiobtn__input" type="radio" id="3" name="radio">
+              <label class="radiobtn__label" for="3"></label>
+            </li>
+          </ul>
+        <a class="slider__link slider__link--one  btn" href="#">
+          Давайте оба!
         </a>
-        <ul class="radiobtn-list">
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="1" name="radio" checked>
-            <label class="radiobtn-list__label" for="1"></label>
-          </li>
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="2" name="radio">
-            <label class="radiobtn-list__label" for="2"></label>
-          </li>
-          <li class="radiobtn-list__item">
-            <input class="radiobtn-list__input" type="radio" id="3" name="radio">
-            <label class="radiobtn-list__label" for="3"></label>
-          </li>
-        </ul>
+        <a class="slider__link slider__link--two btn" href="#">
+          Давайте оба!
+        </a>
+        <a class="slider__link slider__link--three" href="#">
+          Давайте оба!
+        </a>
+        </div>
       </div>
 
       <div class="banner">
         <div class="lead">
           <h1 class="lead__title">
-            Малинка даром!</h1>
+            Малинка даром!
+          </h1>
           <p class="lead__description">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
@@ -167,7 +175,8 @@
             Шоколадки даром!
           </h1>
           <p class="lead__description">
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
           <a class="lead__link btn" href="#">
             Хочу шоколадки!
           </a>
@@ -247,13 +256,12 @@
             </div>
           </div>
         </div>
-      </divs>
-
+      </div>
       <div class="content">
         <h2 class="content__title">
           Магазин Глейси - это онлайн и офлайн магазин по продаже собственного производства на развес
         </h2>
-        <div class="content-block">
+        <div class="content-block-left">
           <p class="content__description">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </p>
@@ -261,7 +269,7 @@
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </div>
-        <div class="content-block">
+        <div class="content-block-right">
           <p class="content__description">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
@@ -278,9 +286,7 @@
             Новое в нашем блоге
           </p>
           <a class="lead__link" href="#">
-            <h2 class="aside__title">
-              10 - способов сервировки фруктовых щербетов к столу
-            </h2>
+            10 - способов сервировки фруктовых щербетов к столу
           </a>
         </div>
         <div class="lead">
@@ -296,65 +302,50 @@
         </div>
       </div>
 
-      <div class="map">
-        <div class="communication-form">
-          <p class="communication-form__description">
-            Адрес главного оффмса и оффлайн магазина:
-          </p>
-          <p class="communication-form__description communication-form__description-bold">
-            Ул. Большая Конюшенная 19/8, Санкт-Петербург
-          </p>
-          <p class="communication-form__description">
-            Для заказов по телефону:
-          </p>
-          <p class="communication-form__description communication-form__description-bold">
-            8 812 450-25-25
-          </p>
-          <p class="communication-form__description">
-            С 10 до 20 ежедневно
-          </p>
-          <a class="communication-form__link btn" href="#">
-            Форма обратной связи
-          </a>
-        </div>
-        <div class="input">
-          <form class="form__adress" action="/echo" method="post">
-            <button class="button--close" type="button"></button>
-            <h3 class="input__title">
-              Мы обязательно вас встретим!
-            </h3>
-            <div class="input-block">
-              <input class="input-block__input-name" type="text" placeholder="Как вас зовут?" required>
-            </div>
-            <div class="input-block">
-              <input class="input-block__input-post" type="email" placeholder="Ваша почта для ответа" required>
-            </div>
-            <div class="input-block">
-              <textarea class="input-block__input-comment" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
-            </div>
-            <button class="input--sent btn" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-      </div>
-
     </main>
+
+
+</div>
+
+<div class="map">
+  <div class="communication-form">
+    <p class="communication-form__description">
+      Адрес главного оффиса и оффлайн магазина:
+    </p>
+    <p class="communication-form__description communication-form__description-bold">
+      Ул. Большая Конюшенная 19/8, Санкт-Петербург
+    </p>
+    <p class="communication-form__description">
+      Для заказов по телефону:
+    </p>
+    <p class="communication-form__description communication-form__description-bold">
+      8 812 450-25-25
+    </p>
+    <p class="communication-form__description">
+      С 10 до 20 ежедневно
+    </p>
+    <a class="communication-form__link btn" href="#">
+      Форма обратной связи
+    </a>
+  </div>
+</div>
+
+<div class="container">
 
     <footer class="footer">
 
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#twitr"></a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#twit"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#inst"></a>
+        <li class="social__item">
+          <a class="social__link" href="#inst"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#fb"></a>
+        <li class="social__item">
+          <a class="social__link" href="#fb"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#vk"></a>
+        <li class="social__item">
+          <a class="socialt__link" href="#vk"></a>
         </li>
       </ul>
       <div class="about-us">
@@ -362,19 +353,19 @@
           Для поставщиков
         </a>
         <a class="about-us__link" href="#">
-          О прооизводстве
+          Наши документы
         </a>
         <a class="about-us__link" href="#">
-          Наши документы
+          О прооизводстве
         </a>
         <a class="about-us__link" href="#">
           Экологические стандарты
         </a>
       </div>
       <div class="copyright">
-        <p class="copyright__description">
+        <p class="copyright-block__description">
           Сделано в
-          <a class="copyright__link" href="#htmlacademy">
+          <a class="copyright-block__link" href="#htmlacademy">
             HTML Academy 2017
           </a>
         </p>
@@ -382,6 +373,27 @@
 
     </footer>
 
+  </div>
+
+  <div class="input">
+    <form class="form__adress" action="/echo" method="post">
+      <button class="button--close" type="button"></button>
+      <h3 class="input__title">
+        Мы обязательно вас встретим!
+      </h3>
+      <div class="input-block">
+        <input class="input-block__input-name" type="text" placeholder="Как вас зовут?" required>
+      </div>
+      <div class="input-block">
+        <input class="input-block__input-post" type="email" placeholder="Ваша почта для ответа" required>
+      </div>
+      <div class="input-block">
+        <textarea class="input-block__input-comment" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
+      </div>
+      <button class="input--sent btn" type="submit">
+        Отправить
+      </button>
+    </form>
   </div>
 </body>
 
