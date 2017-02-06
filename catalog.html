@@ -54,7 +54,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
-                Доставка
+                Доставка и оплата
               </a>
             </li>
             <li class="main-nav__item">
@@ -74,7 +74,6 @@
             </li>
             <li class="nav__item nav__item--login">
               <a class="login__link" href="#">
-                <img class="login__pic" src="img/login.png" alt="login">
                 Вход
               </a>
               <div class="login">
@@ -100,15 +99,14 @@
               </div>
             </li>
             <li class="nav__item nav__item--basket">
-              <a class="basket__link" href="#">
-                <img class="basket__pic" src="img/basket-red.png" alt="basket">
+              <a class="basket__link basket__link--red" href="#">
                 2 товара
               </a>
               <div class="basket__block">
                 <table class="basket-list__item basket-list__item--table">
                   <tr class="basket-list__item basket-list__item--row">
                     <td class="basket-list__item basket-list__item--column">
-                      <button class="basket-list__item basket-list__item--button button--close" type="button" name="close"></button>
+                      <button class="basket-list__item--button button--close" type="button" name="close"></button>
                     </td>
                     <td class="basket-list__item basket-list__item--column">
                       <img class="basket-list__item basket-list__item--pic" src="img/mini-orange.png" alt="ice cream">
@@ -125,7 +123,7 @@
                   </tr>
                   <tr class="basket-list__item basket-list__item--row">
                     <td class="basket-list__item basket-list__item--column">
-                      <button class="basket-list__item basket-list__item--button button--close" type="button" name="close"></button>
+                      <button class="basket-list__item--button button--close" type="button" name="close"></button>
                     </td>
                     <td class="basket-list__item basket-list__item--column">
                       <img class="basket-list__item basket-list__item--pic" src="img/mini-stroberry.png" alt="ice cream">
@@ -232,28 +230,28 @@
               <p class="creamy__description">
                 Жирность:
               </p>
-              <ul class="radiobtn__list">
-                <li class="radiobtn__item">
-                  <input class="radiobtn__item radiobtn-list__item--input" type="radio" id="0%" name="radio">
-                  <label class="radiobtn__label" for="0%">
+              <ul class="radio-btn__list">
+                <li class="radio-btn__item">
+                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="0%" name="radio">
+                  <label class="radio-btn__label" for="0%">
                     0%
                   </label>
                 </li>
-                <li class="radiobtn__item">
-                  <input class="radiobtn__item radiobtn-list__item--input" type="radio" id="10%" name="radio" checked>
-                  <label class="radiobtn-list__label" for="10%">
+                <li class="radio-btn__item">
+                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="10%" name="radio" checked>
+                  <label class="radio-btn-list__label" for="10%">
                     10%
                   </label>
                 </li>
-                <li class="radiobtn__item">
-                  <input class="radiobtn__item radiobtn-list__item--input" type="radio" id="30%" name="radio">
-                  <label class="radiobtn__label" for="30%">
+                <li class="radio-btn__item">
+                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="30%" name="radio">
+                  <label class="radio-btn__label" for="30%">
                     30%
                   </label>
                 </li>
-                <li class="radiobtn__item">
-                  <input class="radiobtn__item radiobtn-list__item--input" type="radio" id="higher_30%" name="radio">
-                  <label class="radiobtn__label" for="higher_30%">
+                <li class="radio-btn__item">
+                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="higher_30%" name="radio">
+                  <label class="radio-btn__label" for="higher_30%">
                     Выше 30%
                   </label>
                 </li>
@@ -310,9 +308,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/orange.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            310 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big ">
+            310 &#8381;
+            <span class="hit__title hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </a>
@@ -328,9 +329,12 @@
          <div class="hit__img">
            <img class="hit__pic" src="img/coffe.jpg" alt="ice-cream">
          </div>
-         <h2 class="hit__title">
-           380 &#8381;/кг
-         </h2>
+         <p class="hit__title hit__title--big">
+           380 &#8381;
+           <span class="hit__title--small">
+             /кг
+           </span>
+         </p>
          <a class="hit__link" href="#">
            Сливочно-кофейное с кусочками шоколада
          </a>
@@ -346,9 +350,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/strawberry.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            355 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            355 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочно-клубничное с присыпкой из белого шоколада
           </a>
@@ -364,9 +371,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/сreme-brulee.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            415 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            415 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное крем-брюле с карамельной подливкой
           </a>
@@ -382,9 +392,12 @@
            <div class="hit__img">
              <img class="hit__pic" src="img/cowberry.jpg" alt="ice-cream">
            </div>
-           <h2 class="hit__title">
-             325 &#8381;/кг
-           </h2>
+           <p class="hit__title hit__title--big">
+             325 &#8381;
+             <span class="hit__title--small">
+               /кг
+             </span>
+           </p>
            <a class="hit__link" href="#">
              Сливочное с брусничным жлемом
            </a>
@@ -400,9 +413,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/blackberry.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            410 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            410 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочно-черничное с цельными ягодам черники
           </a>
@@ -418,9 +434,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/lemon.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            375 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            375 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочно-лиммоное с карамельной посыпкой
           </a>
@@ -436,9 +455,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/chocolate.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            320 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            320 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное с шоколадной стружкой
           </a>
@@ -454,9 +476,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/vanilla.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            440 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            440 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочно-ванильное с кусочками шоколада
           </a>
@@ -472,9 +497,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/menthol.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            435 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            435 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное с ментоловым сиропом
           </a>
@@ -490,9 +518,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/creamy.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            355 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            355 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное с кусочками чёрного шоколада
           </a>
@@ -508,9 +539,12 @@
           <div class="hit__img">
             <img class="hit__pic" src="img/mint.jpg" alt="ice-cream">
           </div>
-          <h2 class="hit__title">
-            420 &#8381;/кг
-          </h2>
+          <p class="hit__title hit__title--big">
+            420 &#8381;
+            <span class="hit__title--small">
+              /кг
+            </span>
+          </p>
           <a class="hit__link" href="#">
             Сливочное с мятным сиропом
           </a>
@@ -563,41 +597,40 @@
 
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="#twit"></a>
+          <a class="social__link social__link--twit" href="#twit"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#inst"></a>
+          <a class="social__link social__link--inst" href="#inst"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#fb"></a>
+          <a class="social__link social__link--fb" href="#fb"></a>
         </li>
         <li class="social__item">
-          <a class="socialt__link" href="#vk"></a>
+          <a class="social__link social__link--vk" href="#vk"></a>
         </li>
       </ul>
       <div class="about-us">
-          <a class="about-us__link about-us__link--bold" href="#">
-            Для поставщиков
-          </a>
-          <a class="about-us__link" href="#">
-            О прооизводстве
-          </a>
-          <a class="about-us__link" href="#">
-            Наши документы
-          </a>
-          <a class="about-us__link" href="#">
-            Экологические стандарты
-          </a>
+        <a class="about-us__link about-us__link--bold" href="#">
+          Для поставщиков
+        </a>
+        <a class="about-us__link" href="#">
+          О прооизводстве
+        </a>
+        <a class="about-us__link" href="#">
+          Наши документы
+        </a>
+        <a class="about-us__link" href="#">
+          Экологические стандарты
+        </a>
       </div>
       <div class="copyright">
-        <div class="copyright-block">
-          <p class="copyright-block__description">
-            Сделано в
-            <a class="copyright-block__link" href="#htmlacademy">
-              HTML Academy 2017
-            </a>
-          </p>
-        </div>
+        <img class="copyright__img" src="img/logo_html.png" alt="logo_html">
+        <p class="copyright__description">
+          Сделано в
+          <a class="copyright__link" href="#htmlacademy">
+            HTML Academy 2017
+          </a>
+        </p>
       </div>
 
     </footer>
