@@ -270,8 +270,6 @@ a.logo {
 }
 .button--close{
   padding-left: 50px;
-
-  background: url("../img/x.png") no-repeat;
 }
 .header-bottom{
   display: flex;
