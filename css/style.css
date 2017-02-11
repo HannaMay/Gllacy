@@ -827,7 +827,6 @@ a.logo {
   vertical-align: top;
   width: 485px;
 }
-
 .content__description{
   margin-top:16px;
   margin-bottom: 9px;
@@ -863,7 +862,6 @@ a.logo {
   border-radius: 15px;
   padding-bottom: 80px;
 }
-
 .lead__caption{
   margin-top: 8px;
   font-size: 16px;
@@ -1047,19 +1045,25 @@ a.logo {
 }
 .input-cart{
   display: block;
-  animation: bonuce 0.6s;
+  animation-name: bonuce;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes bonuce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(25%);
+  }
 }
 .input {
-  /*top:338px;
-  width: 478px;
-  margin-left: -238px;*/
   display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
+  bottom: 20%;
+  left: 37%;
   width: 437px;
-  margin-left: -220px;
   padding: 16px 15px 27px 25px;
   background: #f8f7f4;
   color: #323232;
@@ -1076,8 +1080,7 @@ a.logo {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px 0;
 }
 .input-block{
   position: relative;
