@@ -15,13 +15,13 @@
     <header class="header">
 
       <div class="header-top">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <img class="logo__pic" src="img/logo.png" width="155" height="65" alt="logo">
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list main-nav__list--main">
             <li class="main-nav__item main-nav__item--dropdown">
-              <a class="main-nav__link">
+              <a class="main-nav__link--active">
                 Каталог
               </a>
               <ul class="dropdown-nav__list main-nav__list--сatalog">
@@ -59,7 +59,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
-                О компании
+                О Компании
               </a>
             </li>
           </ul>
@@ -99,52 +99,59 @@
               </div>
             </li>
             <li class="nav__item nav__item--basket">
-              <a class="basket__link basket__link--red" href="#">
+              <a class="basket__link-red" href="#">
                 2 товара
               </a>
-              <div class="basket__block">
-                <table class="basket-list__item basket-list__item--table">
-                  <tr class="basket-list__item basket-list__item--row">
-                    <td class="basket-list__item basket-list__item--column">
-                      <button class="basket-list__item--button button--close" type="button" name="close"></button>
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      <img class="basket-list__item basket-list__item--pic" src="img/mini-orange.png" alt="ice cream">
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      Пломбир с апельсиновым джемом
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      1,5*200 руб
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      300
-                    </td>
-                  </tr>
-                  <tr class="basket-list__item basket-list__item--row">
-                    <td class="basket-list__item basket-list__item--column">
-                      <button class="basket-list__item--button button--close" type="button" name="close"></button>
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      <img class="basket-list__item basket-list__item--pic" src="img/mini-stroberry.png" alt="ice cream">
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      Клубничный пломбир с присыпкой из белого шоколада
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      1,5*300 руб.
-                    </td>
-                    <td class="basket-list__item basket-list__item--column">
-                      450
-                    </td>
-                  </tr>
-                </table>
-                <p class="basket__description basket__description--bold">
-                  Итог:750 руб.
-                </p>
-                <a class="basket__link btn" href="#">
-                  Оформить заказ
-                </a>
+              <div class="basket">
+                  <ul class="basket-list">
+                      <li class="basket__item">
+                        <button class="item button-close" type="button" name="close"></button>
+                        <div class="item basket__img">
+                            <img class="basket__img-pic" src="img/mini-orange.png" alt="ice-cream" width="33" height="33">
+                        </div>
+                        <p class="item basket__description-name">
+                            <a class="basket__link-name" href="#">
+                              Пломбир с апельсиновым джемом
+                            </a>
+                        </p>
+                        <p class="item basket__description-info">
+                            1.5кг x
+                            <span class="price">
+                              200 руб
+                            </span>
+                        </p>
+                        <p class="item basket__description-price">
+                          300 руб
+                        </p>
+                      </li>
+                      <li class="basket__item">
+                        <button class="item button-close" type="button" name="close"></button>
+                        <div class="item basket__img">
+                            <img class="basket__img-pic" src="img/mini-strawberry.png" alt="ice-cream" width="33" height="33">
+                        </div>
+                        <p class="item basket__description-name">
+                            <a class="basket__link-name" href="#">
+                              Клубничный пломбир с присыпкой из белого шоколада
+                            </a>
+                        </p>
+                        <p class="item basket__description-info">
+                            1.5кг x
+                            <span class="price">
+                              300 руб
+                            </span>
+                        </p>
+                        <p class="item basket__description-price">
+                          450 руб
+                        </p>
+                      </li>
+                  </ul>
+                  <div class="basket-block-line"></div>
+                  <p class="basket__description-sum">
+                    Итого: 750 руб.
+                  </p>
+                  <a href="#" class="basket__link-btn btn">
+                    Оформить заказ
+                  </a>
               </div>
             </li>
           </ul>
@@ -152,10 +159,10 @@
       </div>
       <div class="header-bottom">
         <div class="breadcrumbs">
-          <a class="breadcrumbs__link" href="#">
+          <a class="breadcrumbs__link" href="index.html">
             Главная
           </a>
-          <a class="breadcrumbs__link" href="#">
+          <a class="breadcrumbs__link" href="catalog.html">
             Каталог
           </a>
           <a class="breadcrumbs__link">
@@ -185,43 +192,31 @@
               <p class="sort__description">
                 Сортировка:
               </p>
-              <select class="sort__select" name="select">
-                <option class="sort__option" value="popular">
-                  по популярности
-                </option>
-                <option class="sort__option" value="cheap">
-                  сначала не дорогие
-                </option>
-                <option class="sort__option" value="expensive">
-                  сначала дорогие
-                </option>
-                <option class="sort__option" value="creamy">
-                  по жирности
-                </option>
-              </select>
+              <div class="sort-block">
+                <select class="sort__select" name="select">
+                  <option class="sort__option" value="popular">
+                    по популярности
+                  </option>
+                  <option class="sort__option" value="cheap">
+                    сначала не дорогие
+                  </option>
+                  <option class="sort__option" value="expensive">
+                    сначала дорогие
+                  </option>
+                  <option class="sort__option" value="creamy">
+                    по жирности
+                  </option>
+                </select>
+              </div>
             </div>
-            <div class="price">
-              <ul class="price__list">
-                <li class="price__item price-list__item--text">
-                    Цена:
-                </li>
-                <li class="price__item">
-                  <input class="price__label price__label--input" type="text" name="min" value="100" id="min">
-                  <label class="price__label" for="min">
-                    руб.
-                  </label>
-                </li>
-                <li class="price__item price-list__item--text">
-                    -
-                </li>
-                <li class="price__item">
-                  <input class="price__label price__label--input" type="text" name="max" value="500" id="max">
-                  <label class="price__label" for="max">
-                    руб.
-                  </label>
-                </li>
-              </ul>
+            <div class="price-sort">
+              <p class="price-sort__description">
+                Цена: 100 руб. — 500 руб.
+              </p>
               <div class="range">
+                <div class="range__scale">
+                  <div class="range__select"></div>
+                </div>
                 <div class="range__slider"></div>
                 <div class="range__slider"></div>
               </div>
@@ -232,25 +227,25 @@
               </p>
               <ul class="radio-btn__list">
                 <li class="radio-btn__item">
-                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="0%" name="radio">
+                  <input class="radio-btn__input" type="radio" id="0%" name="radio">
                   <label class="radio-btn__label" for="0%">
                     0%
                   </label>
                 </li>
                 <li class="radio-btn__item">
-                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="10%" name="radio" checked>
-                  <label class="radio-btn-list__label" for="10%">
-                    10%
+                  <input class="radio-btn__input" type="radio" id="10%" name="radio" checked>
+                  <label class="radio-btn__label" for="10%">
+                    до 10%
                   </label>
                 </li>
                 <li class="radio-btn__item">
-                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="30%" name="radio">
+                  <input class="radio-btn__input" type="radio" id="30%" name="radio">
                   <label class="radio-btn__label" for="30%">
-                    30%
+                    до 30%
                   </label>
                 </li>
                 <li class="radio-btn__item">
-                  <input class="radio-btn__item radio-btn-list__item--input" type="radio" id="higher_30%" name="radio">
+                  <input class="radio-btn__input" type="radio" id="higher_30%" name="radio">
                   <label class="radio-btn__label" for="higher_30%">
                     Выше 30%
                   </label>
@@ -267,31 +262,31 @@
                 <li class="checkboxes__item">
                   <input class="checkboxes__input" type="checkbox" id="chocolate" name="checkbox" checked>
                   <label class="checkboxes__label" for="chocolate">
-                    Шоколадные присыпки
+                    шоколадные
                   </label>
                 </li>
                 <li class="checkboxes__item">
                   <input class="checkboxes__input" type="checkbox" id="sugar" name="checkbox" checked>
                   <label class="checkboxes__label" for="sugar">
-                    Сахараные присыпки
+                    сахарные присыпки
                   </label>
                 </li>
                 <li class="checkboxes__item">
                   <input class="checkboxes__input" type="checkbox" id="fruits" name="checkbox">
                   <label class="checkboxes__label" for="fruits">
-                    Фрукты
+                    фрукты
                   </label>
                 </li>
                 <li class="checkboxes__item">
                   <input class="checkboxes__input" type="checkbox" id="syrup" name="checkbox">
                   <label class="checkboxes__label" for="syrup">
-                    Сиропы
+                    сиропы
                   </label>
                 </li>
                 <li class="checkboxes__item">
                   <input class="checkboxes__input" type="checkbox" id="jam" name="checkbox">
                   <label class="checkboxes__label" for="jam">
-                    Джемы
+                    джемы
                   </label>
                 </li>
               </ul>
@@ -558,11 +553,11 @@
         </div>
       </div>
       <ul class="pagination__list ">
-        <li class="pagination__item">
-          <a class="pagination__link pagination__link--arrow" href="#"></a>
+        <li class="pagination__item pagination__item--f-arrow">
+          <a class="pagination__link" href="#"></a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">
+        <li class="pagination__item pagination__item--one">
+          <a class="pagination__link pagination__link--active" href="#">
             1
           </a>
         </li>
@@ -586,12 +581,16 @@
             5
           </a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination__link--arrow" href="#"></a>
+        <li class="pagination__item pagination__item--l-arrow">
+          <a class="pagination__link" href="#"></a>
         </li>
       </ul>
 
     </main>
+
+    <div class="line">
+
+    </div>
 
     <footer class="footer">
 
