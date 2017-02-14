@@ -272,7 +272,7 @@ h2 {
 }
 .login {
   position: absolute;
-  top: 32px;
+  top: 30px;
   right: 0px;
   z-index: 5;
   border-top: 5px solid transparent;
@@ -347,7 +347,7 @@ h2 {
 }
 .basket {
   position: absolute;
-  top: 33px;
+  top: 30px;
   right: 0;
   display: none;
   border-top: 5px solid transparent;
@@ -910,6 +910,7 @@ h2 {
 }
 .hit:hover .hit-hover__link{
   display: block;
+  font-size: 18px;
 }
 .hit__pic-hit{
   position: absolute;
