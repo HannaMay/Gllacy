@@ -360,13 +360,13 @@ h2 {
 .basket {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: -2px;
   display: none;
   border-top: 5px solid transparent;
   box-shadow: 20px 20px 20px 0 rgba(0,0,0,0.4);
 }
 .basket-table{
-  width: 505px;
+  width: 510px;
   padding: 20px 14px 21px 15px;
   background: #f8f7f4;
   border-radius: 5px;
@@ -411,7 +411,7 @@ h2 {
   width: 95px;
   margin: 0;
   padding-right: 15px;
-  padding-left: 12px;
+  padding-left: 14px;
   padding-bottom: 5px;
   letter-spacing: 0.25px;
 }
@@ -421,7 +421,7 @@ h2 {
 }
 .basket__description-price{
   margin: 0;
-  padding-left: 9px;
+  padding-left: 10px;
   padding-bottom: 6px;
 }
 .basket-block-line{
@@ -440,7 +440,7 @@ h2 {
 }
 .basket__link-btn{
   float: right;
-  padding: 10px 15px 11px 15px;
+  padding: 11px 15px 16px 15px;
   font-size: 18px;
 }
 .basket-table::after{
@@ -471,44 +471,28 @@ h2 {
 .breadcrumbs__link{
   float: left;
   position: relative;
-  margin-right: 2.5px;
+  margin-right: 20px;
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 16px;
   color: #fff;
   letter-spacing: 0.3px;
-  text-decoration: none;
 }
 .breadcrumbs__link:last-child{
   text-decoration: none;
 }
 .breadcrumbs__link::before{
   content: "»";
-  padding-left: 5px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -15px;
 }
 .breadcrumbs__link:first-child::before{
   content: "";
   display: inline-block;
   vertical-align: top;
   padding-left: 0;
-}
-.breadcrumbs__link:first-child::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  width: 90%;
-  height: 1px;
-  background: #fff;
-}
-.breadcrumbs__link:nth-child(2)::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-  width: 75%;
-  height: 1px;
-  background: #fff;
 }
 .header::after {
   content: "";
@@ -1456,9 +1440,6 @@ h2 {
 .breadcrumbs__link:last-child:hover,
 .breadcrumbs__link:last-child::before{
   color: #fff;
-}
-.breadcrumbs__link  .breadcrumbs__link::after:hover{
-  background: #ffbc9e;
 }
 .copyright {
   width: 190px;
