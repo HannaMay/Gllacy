@@ -65,6 +65,7 @@ h2 {
   height: 0;
 }
 .main-nav{
+  position: relative;
   float: right;
   width: 85.5%;
 }
@@ -205,8 +206,9 @@ h2 {
 }
 
 .nav__list {
-  float: right;
-  padding-left: 0;
+  position: absolute;
+  right: -3px;
+  top: 2px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -258,11 +260,9 @@ h2 {
 }
 .nav__item--login{
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
   box-sizing: border-box;
-  margin-left: 2px;
-  padding: 7px 17px 8px 44px;
+  width: 95px;
+  padding: 7px 10px 8px 44px;
   background: #9eb2a7 url("../img/login.png") no-repeat 16px 6px;
   border-radius: 20px;
   cursor: pointer;
@@ -328,10 +328,9 @@ h2 {
   color: #323232;
 }
 .nav__item--basket{
-  position: relative;
   z-index: 30;
-  display: inline-block;
-  vertical-align: top;
+  box-sizing: border-box;
+  width: 117px;
   padding: 7px 14px 8px 46px;
   background: #9eb2a7 url("../img/basket.png") no-repeat 18px 5px;
   border-radius: 20px;
@@ -344,6 +343,7 @@ h2 {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  width: 119px;
   padding: 7px 14px 8px 46px;
   font-weight: 500;
   background: #f8f7f4 url("../img/basket-red.png") no-repeat 18px 5px;
@@ -455,6 +455,9 @@ h2 {
   align-items: flex-end;
 }
 .contacts__description {
+  position: relative;
+  top: -6px;
+  right: -4px;
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 14px;
@@ -771,6 +774,7 @@ h2 {
 .slider {
   position: relative;
   padding-top: 270px;
+  margin-left: 5px;
   text-align: center;
   color: #ffffff;
 }
