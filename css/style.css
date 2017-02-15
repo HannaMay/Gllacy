@@ -87,9 +87,11 @@ h2 {
   padding-left: 0;
   list-style: none;
 }
-.main-nav__link{
+.main-nav__link,
+.main-nav__link-catalog{
   position: relative;
   text-decoration: none;
+  color: #fff;
 }
 .main-nav__link::after{
   content: "";
@@ -155,10 +157,8 @@ h2 {
   line-height: 16px;
   background-color: #f8f7f4;
 }
-.main-nav__link {
-  color: #fff;
-}
-.main-nav__link:hover {
+.main-nav__link:hover,
+.main-nav__link-catalog:hover {
   color: #323232;
   text-decoration: none;
 }
@@ -167,7 +167,8 @@ h2 {
   border-radius: 15px;
   cursor: pointer;
 }
-.main-nav__item:hover > .main-nav__link {
+.main-nav__item:hover > .main-nav__link,
+.main-nav__item:hover > .main-nav__link-catalog {
   color: #323232;
   text-decoration: none;
 }
@@ -489,18 +490,18 @@ h2 {
   content: "";
   display: inline-block;
   vertical-align: top;
-  text-decoration: none;
+  padding-left: 0;
 }
-.breadcrumbs__link:first-child:after{
+.breadcrumbs__link:first-child::after{
   content: "";
   position: absolute;
   bottom: 0;
-  left: 10px;
-  width: 83%;
+  left: 5px;
+  width: 90%;
   height: 1px;
   background: #fff;
 }
-.breadcrumbs__link:nth-child(2):after{
+.breadcrumbs__link:nth-child(2)::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -1230,7 +1231,7 @@ h2 {
 .communication-form {
   position: absolute;
   top: 50px;
-  right: 2.5%;
+  right: 20%;
   box-sizing: border-box;
   width: 305px;
   padding: 29px 23px 30px 24px;
@@ -1441,6 +1442,8 @@ h2 {
 .copyright__link{
   color: #fff;
 }
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active,
 .login-form__link:hover,
 .login-form__link:active,
 .about-us__link:hover,
@@ -1448,6 +1451,14 @@ h2 {
 .copyright__link:hover,
 .copyright__link a:active{
   color: #ffbc9e;
+}
+.breadcrumbs__link::before,
+.breadcrumbs__link:last-child:hover,
+.breadcrumbs__link:last-child::before{
+  color: #fff;
+}
+.breadcrumbs__link  .breadcrumbs__link::after:hover{
+  background: #ffbc9e;
 }
 .copyright {
   width: 190px;
