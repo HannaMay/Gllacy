@@ -658,17 +658,17 @@ h2 {
   height: 22px;
   background: url("../img/radiobtn.png") no-repeat;
 }
-.radio-btn__label:disabled::before{
-  content: "";
-  width: 22px;
-  height: 22px;
-  background: url("../img/radiobtn-block.png") no-repeat;
-}
 .radio-btn__label:hover::before{
   content: "";
   height: 22px;
   width: 22px;
   background: url("../img/radiobtn_zero.png") no-repeat;
+}
+.radio-btn__input:checked:hover + .radio-btn__label::before{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: url("../img/radiobtn-active_zero.png") no-repeat;
 }
 .radio-btn__input:checked + .radio-btn__label::before{
   content: "";
@@ -676,17 +676,17 @@ h2 {
   height: 22px;
   background: url("../img/radiobtn-active.png") no-repeat;
 }
+.radio-btn__input:disabled + .radio-btn__label::before{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: url("../img/radiobtn-block.png") no-repeat;
+}
 .radio-btn__input:checked:disabled + .radio-btn__label::before{
   content: "";
   width: 22px;
   height: 22px;
   background: url("../img/radiobtn-block_zero.png") no-repeat;
-}
-.radio-btn__input:checked:hover + .radio-btn__label::before{
-  content: "";
-  width: 22px;
-  height: 22px;
-  background: url("../img/radiobtn-active_zero.png") no-repeat;
 }
 .filter-part__block::after {
   content: "";
@@ -738,17 +738,17 @@ h2 {
   height: 20px;
   background: url("../img/chekbox-active.png") no-repeat;
 }
-.checkboxes__input:checked:disabled + .checkboxes__label::before{
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../img/chekbox-block_zero.png") no-repeat;
-}
 .checkboxes__input:checked:hover + .checkboxes__label::before{
   content: "";
   width: 20px;
   height: 20px;
   background: url("../img/chekbox-active_zero.png") no-repeat;
+}
+.checkboxes__input:checked:disabled + .checkboxes__label::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/chekbox-block_zero.png") no-repeat;
 }
 .filter__button{
   float: right;
@@ -775,6 +775,7 @@ h2 {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
+  text-align: center;
   border: none;
   background: #f26843;
   background: linear-gradient(to bottom,#f16743 0%,#e84c36 100%);
@@ -1221,7 +1222,7 @@ h2 {
 .communication-form {
   position: absolute;
   top: 50px;
-  right: 20%;
+  right: 6%;
   box-sizing: border-box;
   width: 305px;
   padding: 29px 23px 30px 24px;
