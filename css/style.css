@@ -1216,6 +1216,7 @@ h2 {
   position: relative;
   z-index: 91;
   height: 430px;
+  background: url("../img/map.jpg");
 }
 .communication-form {
   position: absolute;
