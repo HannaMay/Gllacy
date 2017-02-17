@@ -69,7 +69,6 @@ h2 {
 }
 .main-nav__list{
   float: left;
-  padding-left: 0;
   font-weight: bold;
   line-height: 18px;
 }
@@ -106,56 +105,6 @@ h2 {
 .main-nav__item:hover>.main-nav__link:after{
   display: none;
 }
-.dropdown-nav__list {
-  position: absolute;
-  top: 100%;
-  left: -6px;
-  z-index: 50;
-  display: none;
-  width: 143px;
-  border-top: 5px solid transparent;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 10px 26px 0 rgba(0,0,0,0.4);
-  cursor: pointer;
-}
-.dropdown-nav__item:first-child{
-  position: relative;
-  padding-top: 11px;
-  padding-bottom: 12px;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
-}
-.dropdown-nav__item:last-child{
-  padding-bottom: 9px;
-  border-radius: 0 0 5px 5px;
-}
-.dropdown-nav__item:last-child:hover{
-  padding-bottom: 9px;
-  border-radius: 0 0 5px 5px;
-}
-.dropdown-nav__link--new::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 3%;
-  width: 92%;
-  height: 1px;
-  background: #d1d0ce;
-}
-.dropdown-nav__item+.dropdown-nav__link--new{
-  padding: 0 20px;
-}
-.dropdown-nav__link{
-  color: #323232;
-  text-decoration: none;
-}
-.dropdown-nav__item {
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 16px;
-  background-color: #f8f7f4;
-}
 .main-nav__link:hover,
 .main-nav__link-catalog:hover {
   color: #323232;
@@ -175,9 +124,6 @@ h2 {
   background-color: #ededed;
   box-shadow: inset 0 1px 0 1px rgba(0,0,0,0.6);
 }
-.dropdown-nav__item:active{
-  background: #f6b5a5;
-}
 .main-nav__item--active{
   padding: 7px 11px 7px 13px;
   color: #fff;
@@ -185,24 +131,86 @@ h2 {
   background-color: #d07058;
   border-radius: 15px;
 }
+.dropdown-nav__list {
+  position: absolute;
+  top: 32px;
+  left: -6px;
+  z-index: 50;
+  display: none;
+  width: 143px;
+  border-top: 5px solid transparent;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 10px 26px 0 rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.dropdown-nav__item {
+  background-color: #f8f7f4;
+}
 .dropdown-nav__item--active{
-  padding: 8px 20px;
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
   color: #fff;
   background: #d07058;
 }
-.main-nav__item--dropdown:hover .dropdown-nav__list{
-  display: block;
+.dropdown-nav__item:hover{
+  background-color: #fbded8;
+}
+.dropdown-nav__item:active{
+  background: #f6b5a5;
+}
+.dropdown-nav__item:first-child{
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  border-radius: 5px 5px 0 0;
 }
 .dropdown-nav__item:first-child:hover{
   border-radius: 5px 5px 0 0;
 }
-.dropdown-nav__item:hover{
-  background-color: #fbded8;
+.dropdown-nav__item:last-child{
+  padding-bottom: 4px;
+  border-radius: 0 0 5px 5px;
 }
-
+.dropdown-nav__item:last-child:hover{
+  border-radius: 0 0 5px 5px;
+}
+.dropdown-nav__item+.dropdown-nav__link--new{
+  padding: 0 20px;
+}
+.dropdown-nav__link{
+  display: block;
+  padding-top: 9px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+  padding-left: 19px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #323232;
+  text-decoration: none;
+}
+.dropdown-nav__link--new::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  width: 92%;
+  height: 1px;
+  background: #d1d0ce;
+}
+.dropdown-nav__link--new{
+  font-weight: bold;
+}
+.dropdown-nav__link--new:active{
+  border-radius: 5px 5px 0 0;
+}
+.dropdown-nav__link-last:active{
+  border-radius: 0 0 5px 5px;
+}
+.main-nav__item--dropdown:hover .dropdown-nav__list{
+  display: block;
+}
 .nav__list {
   position: absolute;
   right: -3px;
@@ -223,7 +231,7 @@ h2 {
   width: 32px;
   height: 32px;
   color: #fff;
-  background: #9eb2a7 url("../img/magnifier.png") no-repeat 7px 7px;
+  background: rgba(255, 255, 255, 0.25) url("../img/magnifier.png") no-repeat 7px 7px;
   border-radius: 50%;
 }
 .nav__item--search:hover{
@@ -261,7 +269,7 @@ h2 {
   box-sizing: border-box;
   width: 95px;
   padding: 7px 10px 8px 44px;
-  background: #9eb2a7 url("../img/login.png") no-repeat 16px 6px;
+  background: rgba(255, 255, 255, 0.25) url("../img/login.png") no-repeat 16px 6px;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -330,7 +338,7 @@ h2 {
   box-sizing: border-box;
   width: 117px;
   padding: 7px 14px 8px 46px;
-  background: #9eb2a7 url("../img/basket.png") no-repeat 18px 5px;
+  background: rgba(255, 255, 255, 0.25) url("../img/basket.png") no-repeat 18px 5px;
   border-radius: 20px;
 }
 .basket__link{
@@ -1351,7 +1359,7 @@ h2 {
   left: 440px;
   width: 20px;
   height: 20px;
-  background: url("../img/bigХ.png") no-repeat;
+  background: url("../img/bigx.png") no-repeat;
   cursor: pointer;
 }
 .input--sent {
