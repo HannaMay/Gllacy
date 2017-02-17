@@ -358,14 +358,14 @@ h2 {
 .basket {
   position: absolute;
   top: 30px;
-  right: -2px;
+  right: -1px;
   display: none;
   border-top: 5px solid transparent;
   box-shadow: 20px 20px 20px 0 rgba(0,0,0,0.4);
 }
 .basket-table{
   width: 510px;
-  padding: 20px 14px 21px 15px;
+  padding: 20px 15px 21px 15px;
   background: #f8f7f4;
   border-radius: 5px;
   font-weight: normal;
@@ -429,7 +429,7 @@ h2 {
   background: #ccccc9;
 }
 .basket__description-sum {
-  margin-bottom: 13px;
+  margin-bottom: 18px;
   text-align: right;
   font-weight: bold;
   font-size: 15px;
@@ -438,7 +438,7 @@ h2 {
 }
 .basket__link-btn{
   float: right;
-  padding: 11px 15px 16px 15px;
+  padding: 10px 14px 11px 15px;
   font-size: 18px;
 }
 .basket-table::after{
