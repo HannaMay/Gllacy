@@ -481,7 +481,7 @@ h2 {
   float: left;
   position: relative;
   margin-right: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -759,8 +759,8 @@ h2 {
 .filter__button{
   float: right;
   margin-top: 25px;
-  margin-right: 118px;
-  padding: 8px 28px 8px 27px;
+  margin-right: 117px;
+  padding: 8px 30px 8px 30px;
   font-weight: 500;
   box-shadow: inset 0 0 0 2px #ffffff;
 }
@@ -980,7 +980,7 @@ h2 {
 }
 .hit__title--small{
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 113px;
   width: 45px;
   font-size: 30px;
@@ -989,8 +989,10 @@ h2 {
 }
 .hit__link{
   display: inline-block;
+  width: 255px;
   margin-top: 9px;
   margin-bottom: 15px;
+  margin-left: 7px;
   color:#ffffff;
   text-align: center;
 }
@@ -1163,18 +1165,23 @@ h2 {
   clear: both;
   height: 0;
 }
-.main-catalog:after{
+.pagination__list:after{
   content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
   height: 2px;
   background-color: rgba(255,255,255,0.25);
 }
 .pagination__list {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin-top: 41px;
+  margin-bottom: 6px;
+  margin-right: -10px;
   padding: 0;
 }
 .pagination__item,
@@ -1185,9 +1192,9 @@ h2 {
   height: 25px;
   margin-top: 15px;
   margin-bottom: 25px;
+  margin-right: 4px;
   line-height: 25px;
   text-align: center;
-  border-radius: 50%;
 }
 .pagination__item--f-arrow{
   background: url("../img/arrow_left.png") no-repeat 7px 5px;
@@ -1378,12 +1385,12 @@ h2 {
 .social__list{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0;
+  margin-bottom: 3px;
   padding-left: 0;
   list-style: none;
 }
 .social__item {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 .social__link{
   display: block;
@@ -1413,6 +1420,8 @@ h2 {
 }
 .about-us{
   display: flex;
+  margin-bottom: 7px;
+  margin-left: 23px;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1429,7 +1438,8 @@ h2 {
 .about-us__link--bold::before {
   content: "";
   position: absolute;
-  left: -20px;
+  top: 2px;
+  left: -21px;
   display: block;
   width: 15px;
   height: 13px;
@@ -1456,9 +1466,13 @@ h2 {
   color: #ffffff;
 }
 .copyright {
+  box-sizing: border-box;
   width: 190px;
   font-size: 12px;
   line-height: 16px;
+}
+.copyright__img{
+  padding-left: 2px;
 }
 .copyright__description{
   margin-top: 0;
