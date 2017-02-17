@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  color: #fff;
+  color: #ffffff;
   line-height: 22px;
   background-color: rgb(132, 157, 143);
 }
@@ -89,7 +89,7 @@ h2 {
 .main-nav__link-catalog{
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 .main-nav__link::after{
   content: "";
@@ -126,7 +126,7 @@ h2 {
 }
 .main-nav__item--active{
   padding: 7px 11px 7px 13px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   background-color: #d07058;
   border-radius: 15px;
@@ -150,7 +150,7 @@ h2 {
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
-  color: #fff;
+  color: #ffffff;
   background: #d07058;
 }
 .dropdown-nav__item:hover{
@@ -230,7 +230,7 @@ h2 {
   vertical-align: top;
   width: 32px;
   height: 32px;
-  color: #fff;
+  color: #ffffff;
   background: rgba(255, 255, 255, 0.25) url("../img/magnifier.png") no-repeat 7px 7px;
   border-radius: 50%;
 }
@@ -274,7 +274,7 @@ h2 {
   cursor: pointer;
 }
 .login__link{
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .nav__item--login:hover{
@@ -342,7 +342,7 @@ h2 {
   border-radius: 20px;
 }
 .basket__link{
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .nav__item--basket-red {
@@ -484,7 +484,7 @@ h2 {
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 16px;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 0.3px;
 }
 .breadcrumbs__link:last-child{
@@ -559,7 +559,7 @@ h2 {
   margin-top: 2px;
   margin-bottom: 0;
   padding: 8px 32px 8px 15px;
-  color: #fff;
+  color: #ffffff;
   background: #a9bab0;
   border: none;
   border-radius: 18px;
@@ -572,7 +572,7 @@ h2 {
   display: block;
   border-width: 5px 4px 4px;
   border-style: solid;
-  border-color: #fff transparent transparent;
+  border-color: #ffffff transparent transparent;
 }
 .sort-block:hover::after {
   content: "";
@@ -621,9 +621,9 @@ h2 {
   width: 4px;
   height: 4px;
   margin-left: 18px;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   cursor: pointer;
 }
 .range__slider:last-child {
@@ -762,13 +762,13 @@ h2 {
   margin-right: 118px;
   padding: 8px 28px 8px 27px;
   font-weight: 500;
-  box-shadow: inset 0 0 0 2px #fff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 .filter__button:hover{
   font-weight: 500;
   color: #323232;
-  background-color: #fff;
-  box-shadow: inset 0 0 0 2px #fff;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 .filter__button:active{
   font-weight: 500;
@@ -780,7 +780,7 @@ h2 {
 .btn {
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   border: none;
   background: #f26843;
@@ -849,7 +849,7 @@ h2 {
   height: 17px;
   margin-right: 8px;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -873,7 +873,7 @@ h2 {
 #btn-1:checked ~ .container label[for="btn-1"],
 #btn-2:checked ~ .container label[for="btn-2"],
 #btn-3:checked ~ .container label[for="btn-3"] {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .lead__title{
   margin-top: 0;
@@ -908,7 +908,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 30px;
   text-shadow:0 2px 5px rgba(160,32,11,0.76);
@@ -940,7 +940,7 @@ h2 {
   left: -10px;
   width: 268px;
   margin-bottom: 360px;
-  color: #fff;
+  color: #ffffff;
 }
 .hit-hover{
   position: absolute;
@@ -991,7 +991,7 @@ h2 {
   display: inline-block;
   margin-top: 9px;
   margin-bottom: 15px;
-  color:#fff;
+  color:#ffffff;
   text-align: center;
 }
 .hit:hover .hit__link{
@@ -1004,10 +1004,9 @@ h2 {
   padding: 14px 18px 13px 13px;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
-
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -1151,7 +1150,7 @@ h2 {
   float: right;
   padding: 11px 18px;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border: none;
   border-radius: 25px;
@@ -1164,9 +1163,9 @@ h2 {
   clear: both;
   height: 0;
 }
-.line{
+.main-catalog:after{
+  content: "";
   height: 2px;
-  margin: 0 auto;
   background-color: rgba(255,255,255,0.25);
 }
 .pagination__list {
@@ -1197,7 +1196,7 @@ h2 {
   background: url("../img/arrow_right.png") no-repeat 9px 5px;
 }
 .pagination__link{
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .pagination__item:hover{
@@ -1220,7 +1219,7 @@ h2 {
   background: #f8f7f4;
   border-radius: 50%;
 }
-#map{
+.map{
   position: relative;
   z-index: 91;
   height: 430px;
@@ -1235,7 +1234,7 @@ h2 {
   width: 305px;
   padding: 29px 23px 30px 24px;
   color: #323232;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 .communication-form__description{
@@ -1262,7 +1261,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 20px;
 }
@@ -1439,7 +1438,7 @@ h2 {
 }
 .about-us__link,
 .copyright__link{
-  color: #fff;
+  color: #ffffff;
 }
 .breadcrumbs__link:hover,
 .breadcrumbs__link:active,
@@ -1454,7 +1453,7 @@ h2 {
 .breadcrumbs__link::before,
 .breadcrumbs__link:last-child:hover,
 .breadcrumbs__link:last-child::before{
-  color: #fff;
+  color: #ffffff;
 }
 .copyright {
   width: 190px;
