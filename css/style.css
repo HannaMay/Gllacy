@@ -120,10 +120,6 @@ h2 {
   color: #323232;
   text-decoration: none;
 }
-.main-nav__link:active{
-  background-color: #ededed;
-  box-shadow: inset 0 1px 0 1px rgba(0,0,0,0.6);
-}
 .main-nav__item--active{
   padding: 7px 11px 7px 13px;
   color: #ffffff;
@@ -392,6 +388,14 @@ h2 {
   margin-bottom: 18px;
   color: #323232;
 }
+
+.basket__link-name{
+  width: 230px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #323232;
+}
 [type="button"] {
   height: 10px;
   margin-bottom: 7px;
@@ -402,16 +406,6 @@ h2 {
 .basket__img{
   margin-right: 10px;
   margin-left: 5px;
-}
-.basket__description-name {
-  width: 230px;
-  margin-top: 0px;
-  margin-bottom: 0;
-  color: #323232;
-}
-.basket__link-name{
-  text-decoration: none;
-  color: #323232;
 }
 .basket__description-info{
   width: 95px;
