@@ -70,7 +70,7 @@
                 <a class="search__link" href="#"></a>
                 <div class="search">
                   <form class="search__form" action="/echo" method="post">
-                    <input class="search__input" type="search" value="Что ищем?">
+                    <input class="search__input inp" type="search" value="Что ищем?">
                   </form>
                 </div>
               </li>
@@ -81,10 +81,10 @@
                 <div class="login">
                   <form class="login-form" action="/echo" method="post">
                     <div class="login-form__block">
-                      <input class="login-form__input" type="email" placeholder="Электронная почта" required>
+                      <input class="login-form__input inp" type="email" placeholder="Электронная почта" required>
                     </div>
                     <div class="login-form__block">
-                      <input class="login-form__input" type="password" placeholder="Пароль" required>
+                      <input class="login-form__input inp" type="password" placeholder="Пароль" required>
                     </div>
                     <div class="login-form__block">
                       <button class="login-form__button btn" type="submit">
@@ -143,9 +143,9 @@
           </a>
         </div>
         <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <label class="slider-label" for="btn-1"></label>
+          <label class="slider-label" for="btn-2"></label>
+          <label class="slider-label" for="btn-3"></label>
         </div>
       </div>
       <main class="main">
@@ -291,7 +291,7 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="post" action="/echo" method="post">
-                <input class="post__input" type="email" placeholder="Электронная почта" required>
+                <input class="post__input inp" type="email" placeholder="Электронная почта" required>
                 <button class="post__button btn" type="submit">
                   Отправить
                 </button>
@@ -377,15 +377,15 @@
         Мы обязательно вас встретим!
       </h3>
       <div class="input-block">
-        <input class="input-block__input-name" type="text" placeholder="Как вас зовут?" required>
+        <input class="input-block__input-name inp" type="text" placeholder="Как вас зовут?" required>
         <label class="input-block__label-name">Как вас зовут?</label>
       </div>
       <div class="input-block">
-        <input class="input-block__input-post" type="email" placeholder="Ваша почта для ответа" required>
+        <input class="input-block__input-post inp" type="email" placeholder="Ваша почта для ответа" required>
         <label class="input-block__label-post">Ваша почта для ответа</label>
       </div>
       <div class="input-block">
-        <textarea class="input-block__input-comment" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
+        <textarea class="input-block__input-comment inp" rows="5" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
         <label class="input-block__label-comment">Напишите что-нибудь...</label>
       </div>
       <button class="input--sent btn" type="submit">
