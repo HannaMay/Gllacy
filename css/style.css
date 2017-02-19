@@ -1270,19 +1270,36 @@ h2 {
   text-decoration: none;
   border-radius: 20px;
 }
-.input-cart{
+.input {
+  position: fixed;
+  bottom: 20%;
+  left: 38%;
+  z-index: 100;
+  display: none;
+  width: 437px;
+  padding: 16px 15px 27px 25px;
+  color: #323232;
+  background: #f8f7f4;
+  border-radius: 5px;
+}
+.input-show{
   display: block;
   animation-name: bonuce;
   animation-duration: 1s;
-  animation-delay: 0.2s;
-  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-timing-function: ease-in-out;
 }
 @keyframes bonuce {
   0% {
-    transform: translateY(0);
+    transform: translateY(-1000px);
+  }
+  30%{
+    transform: translateY(25%);
+  }
+  60%{
+    transform: translateY(-15%);
   }
   100% {
-    transform: translateY(25%);
+    transform: translateY(-5%);
   }
 }
 .shadow{
@@ -1294,17 +1311,8 @@ h2 {
   height: 100%;
   background-color: rgba(0,0,0,0.3);
 }
-.input {
-  position: fixed;
-  bottom: 20%;
-  left: 35%;
-  z-index: 100;
-  display: none;
-  width: 437px;
-  padding: 16px 15px 27px 25px;
-  color: #323232;
-  background: #f8f7f4;
-  border-radius: 5px;
+.shadow-show{
+  display: block;
 }
 .input::after{
   content: "";
