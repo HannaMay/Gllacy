@@ -567,19 +567,20 @@ h2 {
 }
 
 .breadcrumbs{
-    float: left;
+    display: flex;
+    align-items: baseline;
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
-    top: -12px;
+    top: 0;
 }
 
-.breadcrumbs__img{
-  margin-right: 3px;
+.breadcrumbs__uni{
+  margin-right: 6px;
 }
 
 .breadcrumbs__link {
-    margin-right: 4px;
+    margin-right: 6px;
     margin-bottom: 13px;
     font-size: 14px;
     line-height: 16px;
