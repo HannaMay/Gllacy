@@ -487,23 +487,24 @@ h2 {
 }
 
 .basket__description-info {
-    width: 95px;
+    width: 115px;
     margin: 0;
-    padding-right: 15px;
     padding-left: 14px;
     padding-bottom: 5px;
     letter-spacing: 0.25px;
 }
 
 .price {
-    margin-right: 20px;
+    display: inline-block;
+    width: 60px;
+    margin-right: 0;
     color: #999;
 }
 
 .basket__description-price {
     margin: 0;
-    padding-left: 10px;
-    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-bottom: 5px;
 }
 
 .basket-block-line {
@@ -567,8 +568,12 @@ h2 {
 }
 
 .breadcrumbs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
