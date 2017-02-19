@@ -1902,6 +1902,10 @@ h2 {
     color: #ffbc9e;
 }
 
+.breadcrumbs__link:last-child:hover{
+    color: #ffffff;
+}
+
 .copyright {
     box-sizing: border-box;
     width: 190px;
