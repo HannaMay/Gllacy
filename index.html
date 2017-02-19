@@ -70,7 +70,10 @@
                 <a class="search__link" href="#"></a>
                 <div class="search">
                   <form class="search__form" action="/echo" method="post">
-                    <input class="search__input inp" type="search" value="Что ищем?">
+                    <input class="search__input inp" type="search" plaseholder="Что ищем?">
+                    <label class="search__input-label">
+                      Что ищем?
+                    </label>
                   </form>
                 </div>
               </li>
@@ -81,10 +84,16 @@
                 <div class="login">
                   <form class="login-form" action="/echo" method="post">
                     <div class="login-form__block">
-                      <input class="login-form__input inp" type="email" placeholder="Электронная почта" required>
+                      <input class="login-form__input login-form__inputlog inp" type="email" placeholder="Электронная почта" required>
+                      <label class="login-form__input-labellog">
+                        Электронная почта
+                      </label>
                     </div>
                     <div class="login-form__block">
-                      <input class="login-form__input inp" type="password" placeholder="Пароль" required>
+                      <input class="login-form__input login-form__inputpas inp" type="password" placeholder="Пароль" required>
+                      <label class="login-form__input-labelpas">
+                        Пароль
+                      </label>
                     </div>
                     <div class="login-form__block">
                       <button class="login-form__button btn" type="submit">
@@ -292,6 +301,9 @@
               </p>
               <form class="post" action="/echo" method="post">
                 <input class="post__input inp" type="email" placeholder="Электронная почта" required>
+                <label class="post__input-label">
+                  Электронная почта
+                </label>
                 <button class="post__button btn" type="submit">
                   Отправить
                 </button>
@@ -403,6 +415,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/map.js" type="text/javascript"></script>
   <script src="js/form.js" type="text/javascript"></script>
+  <script src="js/input.js" type="text/javascript"></script>
   </body>
 
 </html>
