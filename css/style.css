@@ -583,10 +583,12 @@ h2 {
 
 .breadcrumbs__link::before {
     content: "»";
-    display: block;
     position: absolute;
     top: 0;
     left: -15px;
+    display: block;
+    width: 15px;
+    height: 15px;
 }
 
 .breadcrumbs__link:first-child::before {
@@ -1219,6 +1221,7 @@ h2 {
 }
 
 .content__title {
+    width: 1060px;
     margin-top: 0;
     margin-bottom: 5px;
     font-weight: bold;
