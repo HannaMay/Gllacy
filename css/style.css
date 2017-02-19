@@ -473,10 +473,11 @@ h2 {
 }
 
 [type="button"] {
-    height: 10px;
+    width: 11px;
+    height: 11px;
     margin-bottom: 7px;
     margin-left: 4px;
-    background: #f8f7f4 url("../img/x.png") no-repeat;
+    background: #f8f7f4 url("../img/sprite.png") no-repeat -53px -115px;
     border: none;
 }
 
@@ -650,6 +651,10 @@ h2 {
     margin-left: 2px;
 }
 
+.sort__select::-ms-expand {
+    display: none;
+}
+
 .sort__select,
 .range,
 .radio-btn__list,
@@ -781,42 +786,42 @@ h2 {
     left: 0px;
     width: 22px;
     height: 22px;
-    background: url("../img/radiobtn.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat  -101px -141px;
 }
 
 .radio-btn__label:hover::before {
     content: "";
     height: 22px;
     width: 22px;
-    background: url("../img/radiobtn_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -194px -115px;
 }
 
 .radio-btn__input:checked:hover + .radio-btn__label::before {
     content: "";
     width: 22px;
     height: 22px;
-    background: url("../img/radiobtn-active_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -189px -7px;
 }
 
 .radio-btn__input:checked + .radio-btn__label::before {
     content: "";
     width: 22px;
     height: 22px;
-    background: url("../img/radiobtn-active.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -136px -141px;
 }
 
 .radio-btn__input:disabled + .radio-btn__label::before {
     content: "";
     width: 22px;
     height: 22px;
-    background: url("../img/radiobtn-block.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -194px -43px;
 }
 
 .radio-btn__input:checked:disabled + .radio-btn__label::before {
     content: "";
     width: 22px;
     height: 22px;
-    background: url("../img/radiobtn-block_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -194px -79px;
 }
 
 .filter-part__block::after {
@@ -853,42 +858,42 @@ h2 {
     left: -5px;
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -155px -7px;
 }
 
 .checkboxes__label:disabled::before {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox-block.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -75px -41px;
 }
 
 .checkboxes__label:hover::before {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -143px -41px;
 }
 
 .checkboxes__input:checked + .checkboxes__label::before {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox-active.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -7px -41px;
 }
 
 .checkboxes__input:checked:hover + .checkboxes__label::before {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox-active_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -41px -41px;
 }
 
 .checkboxes__input:checked:disabled + .checkboxes__label::before {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../img/chekbox-block_zero.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -109px -41px;
 }
 
 .filter__button {
@@ -1422,11 +1427,11 @@ h2 {
 }
 
 .pagination__item--f-arrow {
-    background: url("../img/arrow_left.png") no-repeat 7px 5px;
+  background: url("../img/sprite.png") no-repeat 0px -2px;
 }
 
 .pagination__item--l-arrow {
-    background: url("../img/arrow_right.png") no-repeat 9px 5px;
+    background: url("../img/sprite.png") no-repeat -28px -2px;
 }
 
 .pagination__link {
@@ -1676,7 +1681,7 @@ h2 {
     left: 440px;
     width: 20px;
     height: 20px;
-    background: url("../img/bigx.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -123px -5px;
     cursor: pointer;
 }
 
@@ -1741,7 +1746,7 @@ h2 {
     -webkit-animation-name: up;
     animation-name: up;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
 }
@@ -1754,11 +1759,11 @@ h2 {
     }
 
     80% {
-        opacity: 0.25;
+        opacity: 0.1;
     }
 
     95% {
-        opacity: 0.75;
+        opacity: 0.25;
     }
 
     100% {
@@ -1776,11 +1781,11 @@ h2 {
     }
 
     80% {
-        opacity: 0.25;
+        opacity: 0.1;
     }
 
     95% {
-        opacity: 0.75;
+        opacity: 0.25;
     }
 
     100% {
@@ -1824,8 +1829,8 @@ h2 {
 
 .social__link {
     display: block;
-    width: 31px;
-    height: 31px;
+    width: 32px;
+    height: 32px;
     border: 3px solid #dbe3de;
     border-radius: 50%;
     opacity: 0.8;
@@ -1840,15 +1845,15 @@ h2 {
 }
 
 .social__link--twit {
-    background: url("../img/twitter.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -171px -151px;
 }
 
 .social__link--inst {
-    background: url("../img/insta.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -82px -75px;
 }
 
 .social__link--fb {
-    background: url("../img/fb.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -7px -75px;
 }
 
 .social__link--vk {
@@ -1886,7 +1891,7 @@ h2 {
     width: 15px;
     height: 13px;
     padding-left: 7px;
-    background: url("../img/heart.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat -53px -75px;
 }
 
 .about-us__link,
