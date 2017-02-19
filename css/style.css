@@ -1009,30 +1009,30 @@ h2 {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-#btn-1:checked ~ .container #slide1,
-#btn-2:checked ~ .container #slide2,
-#btn-3:checked ~ .container #slide3 {
+.toggle-one:checked ~ .container .slide-one,
+.toggle-two:checked ~ .container .slide-two,
+.toggle-three:checked ~ .container .slide-three {
     display: block;
 }
 
-#btn-1:checked ~ .container {
+.toggle-one:checked ~ .container {
     background-color: #849d8f;
     background-image: url("../img/slide-1.png");
 }
 
-#btn-2:checked ~ .container {
+.toggle-two:checked ~ .container {
     background-color: #8996a6;
     background-image: url("../img/slide-2.png");
 }
 
-#btn-3:checked ~ .container {
+.toggle-three:checked ~ .container {
     background-color: #9d8b84;
     background-image: url("../img/slide-3.png");
 }
 
-#btn-1:checked ~ .container label[for="btn-1"],
-#btn-2:checked ~ .container label[for="btn-2"],
-#btn-3:checked ~ .container label[for="btn-3"] {
+.toggle-one:checked ~ .container label[for="btn-1"],
+.toggle-two:checked ~ .container label[for="btn-2"],
+.toggle-three:checked ~ .container label[for="btn-3"] {
     background-color: #ffffff;
 }
 
